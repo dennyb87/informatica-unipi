@@ -86,7 +86,7 @@ flowchart TD
 
 Con 12 monete si hanno 24 esiti possibili `1L, 1P, 2L, 2P, ..., 12L, 12P` piu' uno `∅` nel caso in cui non ci sia alcuna moneta anomala, per un totale di 25 possibilita'.  
 
-> E' importante notare che dal numero di soluzioni possiamo ricavare il numero di passi necessari alla risoluzione.
+> Dal numero di soluzioni possiamo ricavare il numero di passi necessari alla risoluzione.
 
 In questo caso 2 pesate non saranno sufficienti in quanto $3^2 = 9 < 25$ serviranno quindi 3 pesate $3^3 = 27 > 25$  
 
@@ -119,7 +119,7 @@ Anche questa volta per distinguere 12 casi avremmo bisogno di almeno 3 pesate, m
 
 Facendo qualche altro tentativo scopriamo che per bilanciare le operazioni occorre confrontare 4 monete contro 4 monete. In questo modo i tre rami contengono rispettivamente 8, 9 e 8 casi. Questo ci garantisce la risoluzione in un massimo 3 pesate in qualunque ramo.  
 
-> E' importante notare che il bilanciamento delle operazioni porta alla soluzione ottimale  
+> Il bilanciamento delle operazioni porta alla soluzione ottimale  
 
 
 ```mermaid
@@ -131,9 +131,12 @@ flowchart TD
     A -->|>| D["1P, 2P, 3P, 4P,<br/>5L, 6L, 7L, 8L<br/>8 casi"]
 
     B --> E{"1, 2, 5 : 3, 4, 6"}
-    E -->|<| F{"1 : 2"}
-    E -->|=| G{"7 : 8"}
-    E -->|>| H{"3 : 4"}
+    E -->|<| X[1L, 2L, 6P]
+    X --> F{"1 : 2"}
+    E -->|=| Y[7P, 8P] 
+    Y --> G{"7 : 8"}
+    E -->|>| Z[5P, 3L, 4L]
+    Z --> H{"3 : 4"}
     F -->|<| I["1L"]
     F -->|=| J["6P"]
     F -->|>| K["2L"]
@@ -144,3 +147,5 @@ flowchart TD
     H -->|=| P["5P"]
     H -->|>| Q["4L"]
 ```
+
+E' importante notare che nella seconda pesata vogliamo distribuire 4 delle monete risulate leggere e 2 di quelle risultate pesanti, in questo modo possiamo di nuovo bilanciare i rami in modo che ciascun esito della seconda pesata lasci al massimo 3 candidati.  
