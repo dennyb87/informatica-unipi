@@ -81,3 +81,66 @@ flowchart TD
     O -->|=| Q[2L]
     O -->|>| R[1P]
 ```
+
+## Problema delle 12 monete  
+
+Con 12 monete si hanno 24 esiti possibili `1L, 1P, 2L, 2P, ..., 12L, 12P` piu' uno `∅` nel caso in cui non ci sia alcuna moneta anomala, per un totale di 25 possibilita'.  
+
+> E' importante notare che dal numero di soluzioni possiamo ricavare il numero di passi necessari alla risoluzione.
+
+In questo caso 2 pesate non saranno sufficienti in quanto $3^2 = 9 < 25$ serviranno quindi 3 pesate $3^3 = 27 > 25$  
+
+Ipotizzando di iniziare come nel problema delle 3 monete si realizza immediatamente che i rami dell'albero decisionale sono sbilanciati, con 21 casi nel ramo centrale per i quali occorrerebbero almeno altre 3 pesate, ma noi ne abbiamo gia' utilizzata una!  
+
+```mermaid
+flowchart TD
+    A{1:2}
+
+    A -->|<| B["1L, 2P<br/>2 casi"]
+    A -->|=| C["Ø, 3L, 3P, …<br/>21 casi"]
+    A -->|>| D["1P, 2L<br/>2 casi"]
+```
+
+Confrontando invece 6 monete contro 6 monete, i rami di squilibrio contengono 12 casi ciascuno.  
+
+```mermaid
+flowchart TD
+    A{"1, 2, 3, 4, 5, 6 : 7, 8, 9, 10, 11, 12"}
+
+    A -->|<| B["1L, 2L, 3L, 4L, 5L, 6L,<br/>7P, 8P, 9P, 10P, 11P, 12P<br/>12 casi"]
+    A -->|=| C["∅<br/>1 caso"]
+    A -->|>| D["1P, 2P, 3P, 4P, 5P, 6P,<br/>7L, 8L, 9L, 10L, 11L, 12L<br/>12 casi"]
+```
+
+Anche questa volta per distinguere 12 casi avremmo bisogno di almeno 3 pesate, ma ne abbiamo gia' usata una!  
+
+
+### Soluzione ottimale  
+
+Facendo qualche altro tentativo scopriamo che per bilanciare le operazioni occorre confrontare 4 monete contro 4 monete. In questo modo i tre rami contengono rispettivamente 8, 9 e 8 casi. Questo ci garantisce la risoluzione in un massimo 3 pesate in qualunque ramo.  
+
+> E' importante notare che il bilanciamento delle operazioni porta alla soluzione ottimale  
+
+
+```mermaid
+flowchart TD
+    A{"1, 2, 3, 4 : 5, 6, 7, 8"}
+
+    A -->|<| B["1L, 2L, 3L, 4L,<br/>5P, 6P, 7P, 8P<br/>8 casi"]
+    A -->|=| C["∅, 9L, 9P, 10L, 10P,<br/>11L, 11P, 12L, 12P<br/>9 casi"]
+    A -->|>| D["1P, 2P, 3P, 4P,<br/>5L, 6L, 7L, 8L<br/>8 casi"]
+
+    B --> E{"1, 2, 5 : 3, 4, 6"}
+    E -->|<| F{"1 : 2"}
+    E -->|=| G{"7 : 8"}
+    E -->|>| H{"3 : 4"}
+    F -->|<| I["1L"]
+    F -->|=| J["6P"]
+    F -->|>| K["2L"]
+    G -->|<| L["8P"]
+    G -->|=| M["X"]
+    G -->|>| N["7P"]
+    H -->|<| O["3L"]
+    H -->|=| P["5P"]
+    H -->|>| Q["4L"]
+```
