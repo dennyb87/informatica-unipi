@@ -149,3 +149,31 @@ flowchart TD
 ```
 
 E' importante notare che nella seconda pesata vogliamo distribuire 4 delle monete risulate leggere e 2 di quelle risultate pesanti, in questo modo possiamo di nuovo bilanciare i rami in modo che ciascun esito della seconda pesata lasci al massimo 3 candidati.  
+
+Sviluppiamo infine il ramo centrale utilizzando tre monete non ancora pesate 9, 10, 11 ed una moneta che sappiamo essere geunina, la 1. Questo ci permette ancora una volta di bilanciare i rami e al tempo stesso inferire informazioni sulla 12.  
+
+
+```mermaid
+flowchart TD
+    A{"9, 10 : 11, 1"}
+
+    A -->|"<"| B["9L, 10L, 11P"]
+    A -->|"="| C["∅, 12L, 12P"]
+    A -->|">"| D["9P, 10P, 11L"]
+
+    B --> E{"9 : 10"}
+    E -->|"<"| F["9L"]
+    E -->|"="| G["11P"]
+    E -->|">"| H["10L"]
+
+    C --> I{"1 : 12"}
+    I -->|"<"| J["12P"]
+    I -->|"="| K["∅"]
+    I -->|">"| L["12L"]
+
+    D --> M{"9 : 10"}
+    M -->|"<"| N["10P"]
+    M -->|"="| O["11L"]
+    M -->|">"| P["9P"]
+```
+
