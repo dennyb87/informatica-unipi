@@ -56,11 +56,11 @@ $L \subseteq A^*$
 
 Sono linguaggi particolari il linguaggio vuoto $\varnothing$ ed il linguaggio di tutte le possibili stringhe su $A$ ovvero $A^*$. Ad esempio se:  
 
-$A = \lbrace0, 1\rbrace$  
+$A = \lbrace 0, 1\rbrace$  
 
 Allora un linguaggio $L$ potrebbe essere...  
 
-$L \subseteq A^* = \lbraceS \in A^* \mid \text{la stringa S contiene un numero pari di 1}\rbrace = \lbrace\epsilon, \rbrace$  
+$L \subseteq A^* = \lbrace S \in A^* \mid \text{la stringa S contiene un numero pari di 1}\rbrace = \lbrace\epsilon, \rbrace$  
 
 ## Grammatica formale  
 
