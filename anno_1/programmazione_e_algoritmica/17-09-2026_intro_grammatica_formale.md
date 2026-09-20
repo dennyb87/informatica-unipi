@@ -12,12 +12,12 @@ La sintassi di un linguaggio definisce le regole per costruire frasi legali del 
 
 Un alfabeto $A$ e' un insieme *finito* di simboli detti *terminali*.  
 
-$A_1 = \{ a, b, c, ..., z\}$  alfabeto dei caratteri dell'alfabeto italiano  
-$A_2 = \{ 0, 1 \}$  alfabeto delle cifre binarie  
+$A_1 = \lbrace a, b, c, ..., z\rbrace$  alfabeto dei caratteri dell'alfabeto italiano  
+$A_2 = \lbrace 0, 1 \rbrace$  alfabeto delle cifre binarie  
 
 ## Stringa  
 
-Una stringa $S$ su un alfabeto $A$ e' una sequenza di lunghezza finita di simboli, anche con ripetizioni, dell'alfabeto $A$. Ad esempio *abzfg* e' una stringa sull'alfabeto $A_1 = \{ a, b, c, ..., z\}$. Formalmente...  
+Una stringa $S$ su un alfabeto $A$ e' una sequenza di lunghezza finita di simboli, anche con ripetizioni, dell'alfabeto $A$. Ad esempio *abzfg* e' una stringa sull'alfabeto $A_1 = \lbrace a, b, c, ..., z\rbrace$. Formalmente...  
 
 $a_1a_2...a_n$ con $n \ge 0$ dove ciascun $a_j$ e' un elemento di $A$  
 
@@ -30,22 +30,22 @@ $S_2 = \epsilon \implies |S_2| = 0$
 
 ## Stringhe di lunghezza fissata  
 
-Definiamo $A^n$ come l'insieme di tutte le stringhe sull'alfabeto $A$ che hanno lunghezza $n$. Se $A = \{0, 1\}$ allora...  
+Definiamo $A^n$ come l'insieme di tutte le stringhe sull'alfabeto $A$ che hanno lunghezza $n$. Se $A = \lbrace0, 1\rbrace$ allora...  
 
-$A^0 = \{\epsilon\}$  
-$A^1 = \{0, 1\}$  
-$A^2 = \{00, 01, 10, 11\}$  
+$A^0 = \lbrace\epsilon\rbrace$  
+$A^1 = \lbrace0, 1\rbrace$  
+$A^2 = \lbrace00, 01, 10, 11\rbrace$  
 ...  
 
 ## Stringhe sull'alfabeto  
 
 Definiamo $A^*$ come l'insieme di tutte le stringhe sull'alfabeto $A$. Formalmente...  
 
-$A^* = \bigcup_{n \ge 0} A_n = \{\epsilon\} \cup A^1 \cup A^2 \cup...$  
+$A^* = \bigcup_{n \ge 0} A_n = \lbrace\epsilon\rbrace \cup A^1 \cup A^2 \cup...$  
 
 Se $A$ non e' vuoto allora $A^*$ e' infinito...  
 
-$A = \{0, 1\} \implies A^* = \{\epsilon, 0, 1, 00, 01, ...\}$  
+$A = \lbrace0, 1\rbrace \implies A^* = \lbrace\epsilon, 0, 1, 00, 01, ...\rbrace$  
 
 
 ## Linguaggio  
@@ -56,11 +56,11 @@ $L \subseteq A^*$
 
 Sono linguaggi particolari il linguaggio vuoto $\varnothing$ ed il linguaggio di tutte le possibili stringhe su $A$ ovvero $A^*$. Ad esempio se:  
 
-$A = \{0, 1\}$  
+$A = \lbrace0, 1\rbrace$  
 
 Allora un linguaggio $L$ potrebbe essere...  
 
-$L \subseteq A^* = \{S \in A^* \mid \text{la stringa S contiene un numero pari di 1}\} = \{\epsilon, \}$  
+$L \subseteq A^* = \lbraceS \in A^* \mid \text{la stringa S contiene un numero pari di 1}\rbrace = \lbrace\epsilon, \rbrace$  
 
 ## Grammatica formale  
 
@@ -82,11 +82,11 @@ Un esempio semplice di grammatica formale e' quello usato per esprimere delle in
 
 L'insieme dei terminali e':
 
-$T = \{\text{sinistra}, \text{destra}, \text{svolta}, \text{a}, \text{prosegui}, \text{dritto}, \text{","}, \text{poi}\}$
+$T = \lbrace\text{sinistra}, \text{destra}, \text{svolta}, \text{a}, \text{prosegui}, \text{dritto}, \text{","}, \text{poi}\rbrace$
 
 I simboli non terminali sono invece:
 
-$N = \{\text{Direzione}, \text{Consiglio}, \text{Percorso}\}$
+$N = \lbrace\text{Direzione}, \text{Consiglio}, \text{Percorso}\rbrace$
 
 Le produzioni della grammatica sono:
 
@@ -108,7 +108,7 @@ Ad esempio, una frase generata da questa grammatica e': *svolta a sinistra, poi 
 Consideriamo espressioni aritmetiche formate da numeri e dagli operatori binari $+$ e $\times$. L'alfabeto contiene quindi le cifre decimali e gli operatori:
 
 $$
-L \subseteq A^* = \{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \times, +\}^*
+L \subseteq A^* = \lbrace0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \times, +\rbrace^*
 $$
 
 Non tutte le stringhe costruite con questi simboli sono espressioni valide: le stringhe ben formate costituiscono un linguaggio, che possiamo descrivere attraverso una grammatica.
