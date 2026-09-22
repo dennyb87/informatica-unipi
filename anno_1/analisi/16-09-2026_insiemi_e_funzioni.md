@@ -223,6 +223,21 @@ $$
 f^{-1}(y)=\sqrt{y}.
 $$
 
+## Simmetria rispetto alla retta $y=x$
+
+Il grafico di una funzione inversa si ottiene per simmetria rispetto alla retta bisettrice.  
+
+$$
+y=x.
+$$
+
+Nel disegno sono rappresentati, come esempio, i grafici di $y=\sqrt{x}$ e
+$y=x^2$ (nel tratto in cui $x\ge 0$): sono simmetrici rispetto a $y=x$.
+
+<img src="./assets/inverse-fun.svg" width="300px" />  
+
+## Nota sulla radice di potenze  
+
 È importante distinguere:
 
 $$
