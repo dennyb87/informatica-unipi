@@ -1,5 +1,3 @@
-# Grammatica e linguaggio
-
 ## Grammatica
 
 Si ricorda che una grammatica è una terna:
