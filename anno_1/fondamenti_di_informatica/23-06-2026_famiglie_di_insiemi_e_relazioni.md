@@ -176,7 +176,7 @@ $Succ = \{ (x, y) \in \mathbb{N} \times \mathbb{N} \mid y = x + 1 \}$
 
 Allora $Succ$ e' una relazione su $\mathbb{N}$ e $Succ \in Rel(\mathbb{N}, \mathbb{N})$
 
-# Relazione identita'  
+## Relazione identita'  
 
 Dato un insieme $A$, la relazione identita' su $A$ e' definita come:  
 
@@ -195,3 +195,11 @@ flowchart LR
     a --> c
     b --> d
 ```
+
+## Relazioni: prodotto cartesiano  
+
+A volte l'insieme di partenza/arrivo puo' essere un prodotto cartesiano.  
+
+$Plus = \{((x, y), z)\quad|\quad z=x+y\} : \mathbb{N}\times\mathbb{N} \leftrightarrow \mathbb{N}$  
+
+$Plus = \{((0, 0), 0), ((1, 0), 1), ...\}$
