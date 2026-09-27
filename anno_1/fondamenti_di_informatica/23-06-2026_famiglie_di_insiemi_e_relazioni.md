@@ -55,3 +55,39 @@ $$\bigcap F = \bigcap_{i \in I} A_i$$
   * $\bigcup \mathcal{H}$ **(Unione):** $\{\text{Anna}, \text{Bob}\} = S1$ $\rightarrow$ unendo tutti i mesi si ricostruisce l'intera classe.
 
   * $\bigcap \mathcal{H}$ **(Intersezione):** $\emptyset$ (insieme vuoto) $\rightarrow$ è impossibile essere nati in più mesi contemporaneamente.
+
+# Partizioni
+
+Una **partizione** su un insieme $A$ è una famiglia $\boldsymbol{P} = \{A_i\}_{i \in I}$ di **sottoinsiemi** di $A$ che soddisfa le seguenti condizioni:
+
+1. ogni insieme $A_i$ è diverso da $\emptyset$ *(insiemi non vuoti)*
+2. l'unione della famiglia e' uguale ad $A$ ovvero $\bigcup \boldsymbol{P} = \bigcup_{i \in I} A_i = A$ *(copertura di $A$)*
+3. dati due indici qualunque $i$ e $j$ con $i \neq j$ si ha $A_i \cap A_j = \emptyset$ *(insiemi disgiunti)*
+
+
+```mermaid
+block
+  block:A["A"]
+    columns 3
+    A1["A₁"]:1
+    A2["A₂"]:1
+    block:destra:1
+      columns 1
+      A3["A₃"]
+      A4["A₄"]
+    end
+  end
+```
+
+Esempio:  
+
+$A = \{1, 2, 3, 4, 5, 6\}$
+
+$$A_1 = \{1, 3, 5\} \quad \text{(numeri dispari)}$$  
+$$A_2 = \{2, 4, 6\} \quad \text{(numeri pari)}$$  
+
+La famiglia $\boldsymbol{P} = \{A_1, A_2\} = \{\{1, 3, 5\}, \{2, 4, 6\}\}$ e' una partizione di $A$ poiche' rispetta le 3 proprieta'. 
+
+$A_1 \neq \emptyset \land A_2 \neq \emptyset$  
+$A_1 \cup A_2 = \{1, 3, 5\} \cup \{2, 4, 6\} = \{1, 2, 3, 4, 5, 6\} = A$  
+$A_1 \cap A_2 = \emptyset$
