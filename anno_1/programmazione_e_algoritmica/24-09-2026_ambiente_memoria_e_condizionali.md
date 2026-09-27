@@ -45,6 +45,14 @@ Si dice **memoria**, rappresentato con sigma $\sigma$, la funzione parziale che 
 
 $$\sigma : \text{Locazioni} \rightharpoonup \text{Valori}$$
 
+### Funzioni parziali  
+
+> Una funzione parziale e' una funzione che non e' necessariamente definita su tutti gli elementi del suo insieme di partenza (dominio), ma solo su un suo sottoinsieme.  
+
+L'ambiente e' una funzione parziale perche' associa i nomi delle variabili alle rispettive locazioni di memoria solo per le variabili che sono state dichiarate. Le variabili non ancora dichiarate o distrutte non hanno un'associazione definita.  
+
+La memoria e' una funzione parziale perche' associa le locazioni di memoria ai rispettivi valori solo per le locazioni effettivamente allocate e in uso dal programma in un dato istante. Lo spazio di memoria teorico e' infinito, ma la funzione e' definita solo sulle celle realmente attive.  
+
 
 ```mermaid
 graph LR
@@ -110,7 +118,6 @@ Cambia l'ambiente e la memoria inserendo un nuovo identificatore con il relativo
 
 $$\rho' = [x \mapsto L_x,\ y \mapsto L_y,\ t \mapsto L_t]$$  
 $$\sigma''' = [L_x \mapsto 1,\ L_y \mapsto 2,\ L_t \mapsto 0]$$  
-
 
 
 ## Comando condizionale
