@@ -111,3 +111,59 @@ Siano $A = \{x, y\}$ e $B = \{a, b, c\}$. Esempi di relazioni tra $A$ e $B$:
 * $R = \{(x, a), (x, c)\} \subseteq A \times B$
 * $\varnothing \subseteq A \times B$ è la **relazione vuota**, $\varnothing \in Rel(A, B)$
 * $A \times B = \{(x, a), (x, b), (x, c), (y, a), (y, b), (y, c)\}$ e' la **relazione completa**
+
+## Rappresentazione grafica di relazioni
+
+Siano $A = \{x, y\}$ e $B = \{a, b, c\}$
+
+```mermaid
+flowchart LR
+    subgraph A
+        x
+        y
+    end
+    subgraph B
+        a
+        b
+        c
+    end
+    x --> a
+    x --> c
+```
+$R = \{(x, a), (x, c)\}$ 
+
+```mermaid
+flowchart TD
+    subgraph A
+        x
+        y
+    end
+    subgraph B
+        a
+        b
+        c
+    end
+```
+
+$\emptyset: A \leftrightarrow B$
+
+```mermaid
+flowchart LR
+    subgraph A
+        x
+        y
+    end
+    subgraph B
+        a
+        b
+        c
+    end
+    x --> a
+    x --> b
+    x --> c
+    y --> a
+    y --> b
+    y --> c
+```
+
+$A \times B \in Rel(A, B)$
