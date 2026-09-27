@@ -320,3 +320,14 @@ $$\text{Nonno} = Padre ; Genitore$$
 In forma estesa...  
 
 $$\text{Nonno} = \{(x, z) \mid (\exists y \in EU . (x, y) \in Padre \land (y, z) \in Genitore)\}$$
+
+# Leggi per composizione
+
+Per gli insiemi $A, B, C, D$ e relazioni $R: A \leftrightarrow B$, $S: B \leftrightarrow C$ e $T: C \leftrightarrow D$ valgono le seguenti leggi:  
+  * **associativita'** - $R; (S; T) = (R; S); T$
+  * **unita'** - $Id_A; R = R = R; Id_B$
+  * **assorbimento** - $R; \varnothing_{B,C} = \varnothing_{A,C} = \varnothing_{A,B} ; S$
+
+E' vero che per tutti gli insiemi $A, B, C$ e per ogni relazione $R \in Rel(A, B)$ vale $R; B \times C = A \times C$ ? Dare una dimostrazione o presentare un controesempio.
+
+> No, nel caso in cui B sia l'unico insieme vuoto si ha che $R; B\times C = \varnothing$ mentre $A\times C \ne \varnothing$  
