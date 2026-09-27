@@ -173,4 +173,6 @@ $A \times B \in Rel(A, B)$
 Se insieme di partenza e insieme di arrivo coincidono, allora chiamiamo le relazioni in $Rel(A, A)$ **relazioni su A**, ad esempio:  
 
 $Succ = \{ (x, y) \in \mathbb{N} \times \mathbb{N} \mid y = x + 1 \}$  
-$Succ \in Rel(\mathbb{N}, \mathbb{N})$
+
+Allora $Succ$ e' una relazione su $\mathbb{N}$ e $Succ \in Rel(\mathbb{N}, \mathbb{N})$
+
