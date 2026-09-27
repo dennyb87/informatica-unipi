@@ -294,8 +294,8 @@ graph LR
 
 Per semplificare e rendere rigorosi gli enunciati introduciamo i **quantificatori**:  
 
-* **esistenziale** $\ \exists x\ .\ P$ che si legge *"esiste un $x$ tale che $P$ vale"*
-* **universale** $\ \forall x\ .\ P$ che si legge *"per ogni $x$ vale $P$"*
+* **esistenziale** $\ \exists x\ .\ P$ che si legge "esiste un $x$ tale che $P$ vale"
+* **universale** $\ \forall x\ .\ P$ che si legge "per ogni $x$ vale $P$"
 
 Adesso invece di:  
 
