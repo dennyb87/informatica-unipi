@@ -91,3 +91,23 @@ La famiglia $\boldsymbol{P} = \{A_1, A_2\} = \{\{1, 3, 5\}, \{2, 4, 6\}\}$ e' un
 $A_1 \neq \emptyset \land A_2 \neq \emptyset$  
 $A_1 \cup A_2 = \{1, 3, 5\} \cup \{2, 4, 6\} = \{1, 2, 3, 4, 5, 6\} = A$  
 $A_1 \cap A_2 = \emptyset$
+
+# Relazioni   
+
+Una **relazione $R$ tra $A$ e $B$** e' un sottoinsieme di $A \times B$ (il prodotto cartesiano).
+$$A \times B = \{(a, b) \mid a \in A \land b \in B\}$$
+
+* $R \subseteq A \times B$ (per definizione)
+* $R \in Rel(A, B)$, dove $Rel(A, B)$ indica l'insieme di tutte le relazioni tra $A$ e $B$.
+* $R: A \leftrightarrow B$ (simile alla tipica notazione per le funzioni)
+
+### Esempio  
+
+Per $R \in Rel(A, B)$ chiamiamo:
+* $A$: "insieme di partenza"
+* $B$: "insieme di arrivo"
+
+Siano $A = \{x, y\}$ e $B = \{a, b, c\}$. Esempi di relazioni tra $A$ e $B$:
+* $R = \{(x, a), (x, c)\} \subseteq A \times B$
+* $\varnothing \subseteq A \times B$ è la **relazione vuota**, $\varnothing \in Rel(A, B)$
+* $A \times B = \{(x, a), (x, b), (x, c), (y, a), (y, b), (y, c)\}$ e' la **relazione completa**
