@@ -289,3 +289,18 @@ graph LR
     x_comp -->|R;S| 2_comp
     z_comp -->|R;S| 2_comp
 ```
+
+# Quantificatori
+
+Per semplificare e rendere rigorosi gli enunciati introduciamo i **quantificatori**:  
+
+* **esistenziale** $\ \exists x\ .\ P$ che si legge *"esiste un $x$ tale che $P$ vale"*
+* **universale** $\ \forall x\ .\ P$ che si legge *"per ogni $x$ vale $P$"*
+
+Adesso invece di:  
+
+$$R; S = \{(x, z) \in A \times C \mid \text{esiste almeno un } y \in B \text{ tale che } (x, y) \in R \text{ e } (y, z) \in S\}$$
+
+possiamo scrivere:  
+
+$$R; S = \{(x, z) \in A \times C \mid (\exists y \in B\ .\ (x, y) \in R \land (y, z) \in S)\}$$
