@@ -146,6 +146,30 @@ Si noti che:
 
 $$a \in X, \quad b \notin X, \quad \{a\} \subseteq X, \quad \{a,b,c\} \not\subseteq X, \quad \{\{a,b,c\}\} \subseteq X$$
 
+### Numeri come insiemi
+
+E' possibile definire $\mathbb{N}$ a partire dagli insiemi.  
+
+$$0 = \varnothing$$
+$$1 = \{0\}$$
+$$2 = \{0, 1\}$$
+$$3 = \{0, 1, 2\}$$
+$$4 = \{0, 1, 2, 3\}$$
+
+$$\vdots$$
+
+$$n = \{0, 1, \dots, n-1\}$$
+
+Espandendo esplicitamente...  
+
+$$0 = \{\}$$
+$$1 = \{\{\}\}$$
+$$2 = \{\{\}, \{\{\}\}\}$$
+$$3 = \{\{\}, \{\{\}\}, \{\{\}, \{\{\}\}\}\}$$
+
+Abbiamo costruito $\mathbb{N}$ utilizzando esclusivamente la teoria degli insiemi. Si parte dall'unico oggetto matematico fondamentale che non richiede presupposti: l'**insieme vuoto** ($\varnothing$ o $\{\}$). Ogni numero successivo $n$ viene definito come l'insieme di **tutti i numeri precedenti**:
+  $$n = n-1 \cup \{n-1\} = \{0, 1, \dots, n-1\}$$
+
 ## Insieme delle parti  
 
 
