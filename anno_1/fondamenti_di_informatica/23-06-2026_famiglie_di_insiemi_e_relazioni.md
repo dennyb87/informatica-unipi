@@ -213,3 +213,28 @@ Date due relazioni $R,S \in Rel(A, B)$, essendo insiemi, valgono le stesse leggi
 * $R \setminus S \subseteq A\times B$ e' detta **differenza** di $R$ e $S$
 * $\overline{R} = (A\times B\setminus R) \subseteq A\times B$ e' detta **complemento** di $R$
 
+# Composizione di relazioni
+
+> **Esempi:** nonna, sorella, bisnonna, nipote, ...
+
+Siano $R,S$ due relazioni $R: A \leftrightarrow B$ e $S: B \leftrightarrow C$. La **composizione** di $R$ con $S$ e' la relazione $R; S: A \leftrightarrow C$:  
+s
+$$R; S = \{(x, z) \in A \times C \mid \text{esiste almeno un } y \in B \text{ tale che } (x, y) \in R \text{ e } (y, z) \in S\}$$
+
+### Esempio
+
+Dati... 
+
+$A = \{x, y, z\}$  
+$B = \{a, b, c, d\}$  
+$C = \{1, 2\}$  
+
+...e le relazioni...  
+
+$R = \{(x, a), (y, b), (z, c), (z, d)\}: A \leftrightarrow B$  
+$S = \{(a, 1), (a, 2), (c, 2), (d, 2)\}: B \leftrightarrow C$  
+
+...la composizione $R;S$ e'...  
+
+$R; S = \{(x, 1), (x, 2), (z, 2)\}: A \leftrightarrow C$  
+
