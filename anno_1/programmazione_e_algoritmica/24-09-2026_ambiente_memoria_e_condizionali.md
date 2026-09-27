@@ -37,19 +37,19 @@ bool m = (a && b) || (b && c) || (a && c);
 
 # Ambiente e memoria
 
-Si dice **ambiente** la funzione parziale dagli identificatori alle locazioni:
+Si dice **ambiente**, rappresentato con rho  $\rho$, la funzione parziale dagli identificatori alle locazioni:
 
 $$\rho : \text{Identificatori} \rightharpoonup \text{Locazioni}$$
 
-Si dice **memoria** la funzione parziale che associa a ogni locazione un valore:
+Si dice **memoria**, rappresentato con sigma $\sigma$, la funzione parziale che associa a ogni locazione un valore:
 
 $$\sigma : \text{Locazioni} \rightharpoonup \text{Valori}$$
 
 
 ```mermaid
 graph LR
-    subgraph STATO ["STATO: S = (P, σ)"]
-        AMB["<b>AMBIENTE (P)</b>
+    subgraph STATO ["STATO: S = (ρ, σ)"]
+        AMB["<b>AMBIENTE (ρ)</b>
         <table>
             <tr><th>Id</th><th>Locazione</th></tr>
             <tr><td>x</td><td>L1</td></tr>
