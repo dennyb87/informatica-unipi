@@ -203,3 +203,13 @@ A volte l'insieme di partenza/arrivo puo' essere un prodotto cartesiano.
 $Plus = \{((x, y), z)\quad|\quad z=x+y\} : \mathbb{N}\times\mathbb{N} \leftrightarrow \mathbb{N}$  
 
 $Plus = \{((0, 0), 0), ((1, 0), 1), ...\}$
+
+# Operazioni insiemistiche su relazioni
+
+Date due relazioni $R,S \in Rel(A, B)$, essendo insiemi, valgono le stesse leggi degli insiemi ma prendendo $A\times B$ come universo:  
+
+* $R \cup S \subseteq A\times B$ e' detta **unione** di $R$ e $S$
+* $R \cap S \subseteq A\times B$ e' detta **intersezione** di $R$ e $S$
+* $R \setminus S \subseteq A\times B$ e' detta **differenza** di $R$ e $S$
+* $\overline{R} = (A\times B\setminus R) \subseteq A\times B$ e' detta **complemento** di $R$
+
