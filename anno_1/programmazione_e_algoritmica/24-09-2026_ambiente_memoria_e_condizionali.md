@@ -167,11 +167,5 @@ Un anno è bisestile se è divisibile per 4 ma non per 100, oppure se è divisib
 
 ~~~c
 bool bis = false;
-bis = ((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0));
+bis := ((anno % 4 == 0 && anno % 100 != 0) || (anno % 400 == 0));
 ~~~
-
-In forma matematica:
-
-$$\operatorname{bisestile}(anno) \iff
-\bigl(anno \bmod 4 = 0 \land anno \bmod 100 \ne 0\bigr)
-\lor \bigl(anno \bmod 400 = 0\bigr)$$
