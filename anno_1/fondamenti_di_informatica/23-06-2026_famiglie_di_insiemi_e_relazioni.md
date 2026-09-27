@@ -176,3 +176,22 @@ $Succ = \{ (x, y) \in \mathbb{N} \times \mathbb{N} \mid y = x + 1 \}$
 
 Allora $Succ$ e' una relazione su $\mathbb{N}$ e $Succ \in Rel(\mathbb{N}, \mathbb{N})$
 
+# Relazione identita'  
+
+Dato un insieme $A$, la relazione identita' su $A$ e' definita come:  
+
+$Id_a =\{(x, x) | x \in A\}$  
+
+```mermaid
+flowchart LR
+    subgraph A
+        a[x]
+        b[y]
+    end
+    subgraph B[A]
+        c[x]
+        d[y]
+    end
+    a --> c
+    b --> d
+```
