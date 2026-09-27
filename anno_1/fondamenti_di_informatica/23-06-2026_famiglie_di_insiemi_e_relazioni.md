@@ -331,3 +331,33 @@ Per gli insiemi $A, B, C, D$ e relazioni $R: A \leftrightarrow B$, $S: B \leftri
 E' vero che per tutti gli insiemi $A, B, C$ e per ogni relazione $R \in Rel(A, B)$ vale $R; B \times C = A \times C$ ? Dare una dimostrazione o presentare un controesempio.
 
 > No, nel caso in cui B sia l'unico insieme vuoto si ha che $R; B\times C = \varnothing$ mentre $A\times C \ne \varnothing$  
+
+## Dimostrazione dell'associativita'  
+
+Per tutti gli insiemi $A, B, C, D$ e relazioni $R: A \leftrightarrow B$, $S: B \leftrightarrow C$ e $T: C \leftrightarrow D$ vale $R;(S;T) = (R;S);T$.
+
+$$
+\begin{aligned}
+& (a,d) \in R;(S;T) \\
+&\iff \exists b \in B \cdot \Big((a,b) \in R \land (b,d) \in (S;T)\Big) 
+&&\text{[Definizione di } R;(S;T) \text{ con punto intermedio } b \in B\text{]} \\
+&\iff \exists b \in B \cdot \Big((a,b) \in R \land \big(\exists c \in C \cdot (b,c) \in S \land (c,d) \in T\big)\Big) 
+&&\text{[Definizione di } S;T \text{ con punto intermedio } c \in C\text{]} \\
+&\iff \exists c \in C \cdot \exists b \in B \cdot \Big((a,b) \in R \land (b,c) \in S \land (c,d) \in T\Big) 
+&&\text{[Estrazione di } \exists c \text{ e commutatività tra } \exists b \text{ e } \exists c\text{]} \\
+&\iff \exists c \in C \cdot \Big(\big(\exists b \in B \cdot (a,b) \in R \land (b,c) \in S\big) \land (c,d) \in T\Big) 
+&&\text{[Raggruppamento logico: } (c,d) \in T \text{ non dipende da } b\text{]} \\
+&\iff \exists c \in C \cdot \Big((a,c) \in (R;S) \land (c,d) \in T\Big) 
+&&\text{[Definizione di } (R;S) \text{ con punto intermedio } b \in B\text{]} \\
+&\iff (a,d) \in (R;S);T 
+&&\text{[Definizione di } (R;S);T \text{ con punto intermedio } c \in C\text{]}
+\end{aligned}
+$$
+
+**Ruolo degli insiemi $B$ e $C$:**
+* $b \in B$ collega $A \xrightarrow{R} B \xrightarrow{S} C$.
+* $c \in C$ collega $B \xrightarrow{S} C \xrightarrow{T} D$.
+
+**Spostamento dei quantificatori $\exists$:**
+  * Si basa sulla regola $P \land (\exists x \cdot Q(x)) \iff \exists x \cdot (P \land Q(x))$ quando $P$ non contiene la variabile $x$.
+  * L'ordine $\exists b \exists c$ equivale a $\exists c \exists b$ poiché la presenza contemporanea dei due elementi prescinde dall'ordine di dichiarazione.
