@@ -304,3 +304,19 @@ $$R; S = \{(x, z) \in A \times C \mid \text{esiste almeno un } y \in B \text{ ta
 possiamo scrivere:  
 
 $$R; S = \{(x, z) \in A \times C \mid (\exists y \in B\ .\ (x, y) \in R \land (y, z) \in S)\}$$
+
+## Esempi di composizione
+
+Dati...  
+
+$Madre = \{(x, y) \in EU \times EU \mid x \text{ è madre di } y\}$  
+$Padre = \{(x, y) \in EU \times EU \mid x \text{ è padre di } y\}$  
+$Genitore = Madre \cup Padre$  
+
+... dove $EU$ e' l'insieme degli esseri umani, se volessimo la composizione $\text{Nonno}$ dovremmo trovare tutti i padri i cui figli sono genitori...   
+
+$$\text{Nonno} = Padre ; Genitore$$  
+
+In forma estesa...  
+
+$$\text{Nonno} = \{(x, z) \mid (\exists y \in EU . (x, y) \in Padre \land (y, z) \in Genitore)\}$$
