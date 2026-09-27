@@ -238,3 +238,54 @@ $S = \{(a, 1), (a, 2), (c, 2), (d, 2)\}: B \leftrightarrow C$
 
 $R; S = \{(x, 1), (x, 2), (z, 2)\}: A \leftrightarrow C$  
 
+```mermaid
+graph LR
+    subgraph A [Insieme A]
+        x
+        y
+        z
+    end
+
+    subgraph B [Insieme B]
+        a
+        b
+        c
+        d
+    end
+
+    subgraph C [Insieme C]
+        1
+        2
+    end
+
+    %% Relazione R
+    x -->|R| a
+    y -->|R| b
+    z -->|R| c
+    z -->|R| d
+
+    %% Relazione S
+    a -->|S| 1
+    a -->|S| 2
+    c -->|S| 2
+    d -->|S| 2
+```
+
+```mermaid
+graph LR
+    subgraph A [Insieme A]
+        x_comp[x]
+        y_comp[y]
+        z_comp[z]
+    end
+
+    subgraph C [Insieme C]
+        1_comp[1]
+        2_comp[2]
+    end
+
+    %% Relazione R;S
+    x_comp -->|R;S| 1_comp
+    x_comp -->|R;S| 2_comp
+    z_comp -->|R;S| 2_comp
+```
