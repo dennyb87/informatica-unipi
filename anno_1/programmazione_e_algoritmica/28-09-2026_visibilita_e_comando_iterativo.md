@@ -97,6 +97,8 @@ while (E) { C }
 
 La guardia viene controllata per determinare se il corpo deve essere eseguito. Se `E` e' vera allora si esegue `C` e si torna al controllo della guardia. Se `E` e' falsa termina. Il corpo puo' essere eseguito zero, una o piu' volte.  
 
+La visibilita' e lo shadowing valgono per ogni blocco, quindi anche per il corpo del comando `while`.  
+
 **Somma i primi n numeri**  
 
 ```c
