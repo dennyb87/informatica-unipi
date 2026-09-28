@@ -71,7 +71,10 @@ graph LR
     S2 --> S3
 ```
 
-*Nota: Uscendo dal blocco l'ambiente di `t` viene distrutto ma la memoria resta!*
+*Nota: Uscendo dal blocco l'ambiente di `t` viene distrutto ma la memoria resta!*  
+
+Per semplicita' di rappresentazione ho usato un solo ambiente, ma in pratica e' come se venisse creato un ambiente specifico per il blocco. Nella valutazione delle variabili il blocco piu' vicino ha la precedenza, se il nome di variabile non viene trovato nell'ambiente del blocco piu' vicino si passa all'ambiente superiore.  
+
 
 ## Shadowing  
 
