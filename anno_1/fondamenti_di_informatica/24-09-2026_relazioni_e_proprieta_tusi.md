@@ -79,3 +79,41 @@ $$(\exists b \in B . \, (a, b) \in R \land (b, c) \in S) \lor (\exists b \in B .
 $$((a, c) \in R ; S) \lor ((a, c) \in R ; T) \equiv \{\text{def di } \cup\}$$  
 
 $$(a, c) \in (R ; S) \cup (R ; T)$$  
+
+
+## La distributività vale per l' (intersezione)? (NO!)
+
+### Controesempio:
+
+Definiamo gli insiemi e le relazioni come mostrato nel diagramma:
+
+```mermaid
+flowchart LR
+    subgraph A["Insieme A"]
+        x((x))
+    end
+
+    subgraph B["Insieme B"]
+        1((1))
+        2((2))
+    end
+
+    subgraph C["Insieme C"]
+        star((z))
+    end
+
+    x -- R --> 1
+    x -- R --> 2
+    1 -- S --> star
+    2 -- T --> star
+```
+
+Allora si ha che:  
+
+$S \cap T = \varnothing$  
+$R;S = \{(x, z)\} = R;T$  
+
+$R;(S\cap T) = \varnothing$  
+$(R;S)\cap(R;T) = \{(x, z)\}$  
+
+$R;(S\cap T) \ne (R;S)\cap(R;T)$  
