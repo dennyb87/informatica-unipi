@@ -170,9 +170,9 @@ $R = \{(x, a), (y, b), (z, c), (z, d)\}$
 
 # Relazioni univalenti
 
-* Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ è **univalente** se:
+Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ e' **univalente** se:
 
-> **per tutti gli $a \in A$ esiste al più un $b \in B$ tale che $(a, b) \in R$**
+> **per tutti gli $a \in A$ esiste al piu' un $b \in B$ tale che $(a, b) \in R$**
 > 
 > $$(\forall a \in A . \, (\forall b, b' \in B . \, (a, b) \in R \land (a, b') \in R \Rightarrow b = b'))$$
 
@@ -223,3 +223,41 @@ flowchart LR
     y --> b
     z --> b
 ```
+
+# Relazioni suriettive
+
+Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ e' **suriettiva** se:
+
+> **per tutti i $b \in B$ esiste almeno un $a \in A$ tale che $(a, b) \in R$**
+> 
+> $$(\forall b \in B . \, (\exists a \in A . \, (a, b) \in R))$$
+
+
+Consideriamo $A = \{x, y, z\}$ e $B = \{a, b, c, d\}$  
+
+
+$R = \{(x, a), (y, b), (z, c), (z, d)\}\implies$ **Suriettiva**, ogni elemento di $B$ e' raggiunto da almeno una freccia  
+
+```mermaid
+flowchart LR
+    subgraph A["A"]
+        x((x))
+        y((y))
+        z((z))
+    end
+
+    subgraph B["B"]
+        a((a))
+        b((b))
+        c((c))
+        d((d))
+    end
+
+    x --> a
+    y --> b
+    z --> c
+    z --> d
+```
+
+In parole povere la suriettivita' e' la totalita' da `B` verso `A`, infatti:  
+> Una funzione $f: A \to B$ e' suriettiva se e solo se la sua relazione inversa $f^{-1}: B \to A$ e' totale
