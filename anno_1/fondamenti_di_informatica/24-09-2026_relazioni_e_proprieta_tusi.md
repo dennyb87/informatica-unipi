@@ -27,6 +27,8 @@ graph LR
     2 -->|Pred| 1_c
 ```
 
+$Succ^{op} = \{(y,x) \in \mathbb{N}\times\mathbb{N}\ |\ (x,y)\in Succ\}$  
+
 # Relazione Opposta e Composizione
 
 $A = \{x, y, z\}$  
@@ -56,3 +58,24 @@ $(R; S)^{op} = S^{op}; R^{op} = \{(1,x), (2,x), (2,z)\}$
 | **Distributività $^{op}$ su $\cup$** | $(S \cup T)^{op} = S^{op} \cup T^{op}$ |
 | **Distributività $^{op}$ su $\cap$** | $(S \cap T)^{op} = S^{op} \cap T^{op}$ |
 | **Distributività $^{op}$ su complementare** | $(\overline{R})^{op} = \overline{R^{op}}$ |
+
+
+## Distributivita' su `U` sinistra  
+
+Per tutte le relazioni $R: A \leftrightarrow B$, $S: B \leftrightarrow C$ e $T: B \leftrightarrow C$ vale:
+
+$$R ; (S \cup T) = (R ; S) \cup (R ; T) : A \leftrightarrow C$$  
+
+#### Dimostrazione:
+
+$$(a, c) \in R ; (S \cup T) \equiv \{\text{def di } ;\}$$  
+
+$$(\exists b \in B . \, (a, b) \in R \land (b, c) \in S \cup T) \equiv \{\text{def di } \cup\}$$  
+
+$$(\exists b \in B . \, (a, b) \in R \land ((b, c) \in S \lor (b, c) \in T))\equiv \{\text{distr. } \land \text{ su } \lor, \text{ distr. } \exists \text{ su } \lor\}$$  
+
+$$(\exists b \in B . \, (a, b) \in R \land (b, c) \in S) \lor (\exists b \in B . \, (a, b) \in R \land (b, c) \in T) \equiv \{\text{def di } ;\}$$  
+
+$$((a, c) \in R ; S) \lor ((a, c) \in R ; T) \equiv \{\text{def di } \cup\}$$  
+
+$$(a, c) \in (R ; S) \cup (R ; T)$$  
