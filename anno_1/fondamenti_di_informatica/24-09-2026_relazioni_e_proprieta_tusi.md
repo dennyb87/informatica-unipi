@@ -117,3 +117,43 @@ $R;(S\cap T) = \varnothing$
 $(R;S)\cap(R;T) = \{(x, z)\}$  
 
 $R;(S\cap T) \ne (R;S)\cap(R;T)$  
+
+
+# TUSI - Proprieta' di relazioni
+
+## Relazioni totali
+
+Dati due insiemi $A$ e $B$ una relazione $R: A \leftrightarrow B$ e' totale se:
+
+> **per tutti gli $a \in A$ esiste almeno un $b \in B$ tale che $(a, b) \in R$**
+> 
+> $$(\forall a \in A . \, (\exists b \in B . \, (a, b) \in R))$$
+
+
+Consideriamo...  
+
+$A = \{x, y, z\}$  
+$B = \{a, b, c, d\}$  
+$R = \{(x, a), (y, b), (z, c), (z, d)\}$  
+
+...allora `R` e' totale!  
+
+  ```mermaid
+  flowchart LR
+      subgraph A["A"]
+          x((x))
+          y((y))
+          z((z))
+      end
+
+      subgraph B["B"]
+          a((a))
+          b((b))
+          c((c))
+          d((d))
+      end
+
+      x --> a
+      y --> b
+      z --> c
+      z --> d
