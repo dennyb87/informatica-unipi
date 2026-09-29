@@ -125,7 +125,7 @@ $R;(S\cap T) \ne (R;S)\cap(R;T)$
 
 Dati due insiemi $A$ e $B$ una relazione $R: A \leftrightarrow B$ e' totale se:
 
-> **per tutti gli $a \in A$ esiste almeno un $b \in B$ tale che $(a, b) \in R$**
+> per tutti gli $a \in A$ esiste **almeno un** $b \in B$ tale che $(a, b) \in R$
 > 
 > $$(\forall a \in A . \, (\exists b \in B . \, (a, b) \in R))$$
 
@@ -157,3 +157,11 @@ $R = \{(x, a), (y, b), (z, c), (z, d)\}$
       y --> b
       z --> c
       z --> d
+```
+
+|Relazioni|Totale ?|
+|-|-|
+|$Id_A : A \leftrightarrow A$|si $\checkmark$|
+|$A\times B: A \leftrightarrow B$| si se $B \ne \varnothing$|
+|$\varnothing: A \leftrightarrow B$| si se $A = \varnothing$|
+
