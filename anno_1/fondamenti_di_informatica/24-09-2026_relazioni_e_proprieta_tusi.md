@@ -318,3 +318,22 @@ In parole povere l'iniettivita' e' l'univalenza da `B` verso `A`
 |$Id_A : A \leftrightarrow A$|si $\checkmark$|
 |$A\times B: A \leftrightarrow B$| si se $A = \varnothing$ o $A$ e' un singoletto, oppure se $B = \varnothing$|
 |$\varnothing: A \leftrightarrow B$| si $\checkmark$|
+
+# Le proprieta' di relazioni "TUSI"
+
+$R: A \leftrightarrow B$  
+
+| | partenza ($A$) | arrivo ($B$) |
+| :--- | :---: | :---: |
+| **almeno** | TOTALE | SURGETTIVA |
+| **al più** | UNIVALENTE | INIETTIVA |
+
+
+## Risultati di dualita'
+
+Per tutti gli insiemi $A$ e $B$, per tutte le relazioni $R: A \leftrightarrow B$:  
+
+* $R$ e' **totale** se e solo se $R^{op}: B \leftrightarrow A$ e' **surgettiva**
+* $R$ e' **univalente** se e solo se $R^{op}: B \leftrightarrow A$ e' **iniettiva**
+* $R$ e' **surgettiva** se e solo se $R^{op}: B \leftrightarrow A$ e' **totale**
+* $R$ e' **iniettiva** se e solo se $R^{op}: B \leftrightarrow A$ e' **univalente**
