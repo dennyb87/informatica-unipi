@@ -337,3 +337,37 @@ Per tutti gli insiemi $A$ e $B$, per tutte le relazioni $R: A \leftrightarrow B$
 * $R$ e' **univalente** se e solo se $R^{op}: B \leftrightarrow A$ e' **iniettiva**
 * $R$ e' **surgettiva** se e solo se $R^{op}: B \leftrightarrow A$ e' **totale**
 * $R$ e' **iniettiva** se e solo se $R^{op}: B \leftrightarrow A$ e' **univalente**
+
+
+# Teorema di caratterizzazione  
+
+| Proprietà | Caratterizzazione Algebrica | Significato Intuitivo |
+| :--- | :--- | :--- |
+| **TOTALE** | $Id_A \subseteq R ; R^{op}$ | Da ogni elemento di $A$ si puo' fare andata ($R$) e ritorno ($R^{op}$) su se stessi. |
+| **INIETTIVA** | $R ; R^{op} \subseteq Id_A$ | Facendo andata ($R$) e poi ritorno ($R^{op}$) da $A$, non si puo' finire su elementi diversi da quello di partenza. |
+| **UNIVALENTE** | $R^{op} ; R \subseteq Id_B$ | Facendo ritorno ($R^{op}$) e poi andata ($R$) da $B$, non si puo' finire su elementi diversi da quello di partenza. |
+| **SURGETTIVA** | $Id_B \subseteq R^{op} ; R$ | Da ogni elemento di $B$ si puo' fare ritorno ($R^{op}$) e poi andata ($R$) su se stessi. |
+
+
+### Intuizione per l'equivalenza  
+
+Il teorema dice che...  
+
+> $R$ e' univalente $\iff R^{op} ; R \subseteq Id_B$  
+
+#### Osservazioni  
+
+1. Se $R$ e' univalente allora ogni elemento di $A$ ha al massimo una freccia verso $B$
+2. Il percorso $R^{op};R$: parte da un elemento $b \in B$ e torna in $A$ con la relazione opposta $R^{op}$, poi vai di nuovo in $B$ con $R$
+
+Quindi, tornato in $A$, esiste una sola freccia per arrivare di nuovo in $B$ ritornando obbligatoriamente al punto di partenza $b$.  
+
+Prendiamo come esempio $A = \{x\}$ e $B = \{1, 2\}$ e la relazione univalente $R = \{(x, 1)\}$. L'elemento $2 \in B$ non ha frecce. L'identita' e': $Id_B = \{(1, 1), (2, 2)\}$  
+Calcoliamo la composizione:  
+
+$R^{op} ; R = \{(1, 1)\}$  
+
+Otteniamo che $\{(1, 1)\} \subseteq \{(1, 1), (2, 2)\} \quad\checkmark$
+
+
+Le leggi per le altre proprieta' vengono dimostrate in modo simile e quindi questa e' sufficiente.  
