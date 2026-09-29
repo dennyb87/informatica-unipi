@@ -129,6 +129,7 @@ Dati due insiemi $A$ e $B$ una relazione $R: A \leftrightarrow B$ e' totale se:
 > 
 > $$(\forall a \in A . \, (\exists b \in B . \, (a, b) \in R))$$
 
+In parole povere, ogni elemento di `A` si collega almeno ad uno o piu' elementi di `B`.  
 
 Consideriamo...  
 
@@ -165,3 +166,60 @@ $R = \{(x, a), (y, b), (z, c), (z, d)\}$
 |$A\times B: A \leftrightarrow B$| si se $B \ne \varnothing$|
 |$\varnothing: A \leftrightarrow B$| si se $A = \varnothing$|
 
+> Se $A = \varnothing$ allora la premessa della proprieta' e' falsa e non c'e' nessun elemento da controllare per cui e' totale per definizione.  
+
+# Relazioni univalenti
+
+* Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ è **univalente** se:
+
+> **per tutti gli $a \in A$ esiste al più un $b \in B$ tale che $(a, b) \in R$**
+> 
+> $$(\forall a \in A . \, (\forall b, b' \in B . \, (a, b) \in R \land (a, b') \in R \Rightarrow b = b'))$$
+
+In parole povere, ogni elemento di `A` si collega al massimo ad un elemento di `B`, quindi zero o un collegamento.  
+
+Consideriamo $A = \{x, y, z\}$ e $B = \{a, b, c, d\}$  
+
+$R = \{(x, a), (y, b), (z, c), (z, d)\}$ $\implies$ **Non univalente**, $z$ ha più immagini: $c$ e $d$
+
+```mermaid
+flowchart LR
+    subgraph A["A"]
+        x((x))
+        y((y))
+        z((z))
+    end
+
+    subgraph B["B"]
+        a((a))
+        b((b))
+        c((c))
+        d((d))
+    end
+
+    x --> a
+    y --> b
+    z --> c
+    z --> d
+```
+
+La seguente relazione e' invece univalente in quanto ogni elemento di `A` e' in collegamento con zero oppure un solo elemento di `B`.  
+
+```mermaid
+flowchart LR
+    subgraph A["A"]
+        x((x))
+        y((y))
+        z((z))
+    end
+
+    subgraph B["B"]
+        a((a))
+        b((b))
+        c((c))
+        d((d))
+    end
+
+    y --> b
+    z --> b
+```
