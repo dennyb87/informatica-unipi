@@ -102,7 +102,10 @@ La guardia viene controllata per determinare se il corpo deve essere eseguito. S
 
 La visibilita' e lo shadowing valgono per ogni blocco, quindi anche per il corpo del comando `while`.  
 
-**Somma i primi n numeri**  
+
+## Esercizi  
+
+Somma i primi n numeri.  
 
 ```c
 int somma = 0;
@@ -111,4 +114,15 @@ while (i <= n) {
     somma := somma + i;
     i := i + 1;
 }
+```
+
+Calcola il quoziente `q` e il resto `r` della divisione, ovvero `q, r` tali che `x=qy+r`  
+
+```c
+int r = x
+int q = 0
+while (r >= y) {
+    r := r - y
+    q := q + 1
+}    
 ```
