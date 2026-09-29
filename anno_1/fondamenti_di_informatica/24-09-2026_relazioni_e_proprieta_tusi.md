@@ -224,6 +224,12 @@ flowchart LR
     z --> b
 ```
 
+|Relazioni|Univalente ?|
+|-|-|
+|$Id_A : A \leftrightarrow A$|si $\checkmark$|
+|$A\times B: A \leftrightarrow B$| si se $A = \varnothing$ oppure $B \ne \varnothing$ oppure $B$ e' un singoletto|
+|$\varnothing: A \leftrightarrow B$| si $\checkmark$|
+
 # Relazioni suriettive
 
 Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ e' **suriettiva** se:
@@ -267,3 +273,48 @@ In parole povere la suriettivita' e' la totalita' da `B` verso `A`, infatti:
 |$Id_A : A \leftrightarrow A$|si $\checkmark$|
 |$A\times B: A \leftrightarrow B$| si se $A \ne \varnothing$ o se $B = \varnothing$|
 |$\varnothing: A \leftrightarrow B$| si se $B = \varnothing$|
+
+# Relazioni iniettive
+
+Dati due insiemi $A$ e $B$, una relazione $R: A \leftrightarrow B$ e' **iniettiva** se:
+
+> **per tutti i $b \in B$ esiste al piu' un $a \in A$ tale che $(a, b) \in R$**
+> 
+> $$(\forall b \in B . \, (\forall a, a' \in A . \, (a, b) \in R \land (a', b) \in R \Rightarrow a = a'))$$
+
+
+Consideriamo $A = \{x, y, z\}$ e $B = \{a, b, c, d\}$  
+
+$R = \{(x, a), (y, b), (z, c), (z, d)\}\implies$ **Iniettiva**, nessun elemento di $B$ ha piu' di una freccia in ingresso
+
+```mermaid
+flowchart LR
+    subgraph A["A"]
+        x((x))
+        y((y))
+        z((z))
+    end
+
+    subgraph B["B"]
+        a((a))
+        b((b))
+        c((c))
+        d((d))
+    end
+
+    x --> a
+    y --> b
+    z --> c
+    z --> d
+```
+
+In parole povere l'iniettivita' e' l'univalenza da `B` verso `A`
+
+> Una funzione $f: A \to B$ e' iniettiva se e solo se la sua relazione inversa $f^{-1}: B \to A$ e' univalente
+
+
+|Relazioni|Iniettiva ?|
+|-|-|
+|$Id_A : A \leftrightarrow A$|si $\checkmark$|
+|$A\times B: A \leftrightarrow B$| si se $A = \varnothing$ o $A$ e' un singoletto, oppure se $B = \varnothing$|
+|$\varnothing: A \leftrightarrow B$| si $\checkmark$|
