@@ -240,13 +240,13 @@ $R = \{(x, a), (y, b), (z, c), (z, d)\}\implies$ **Suriettiva**, ogni elemento d
 
 ```mermaid
 flowchart LR
-    subgraph A["A"]
+    subgraph A
         x((x))
         y((y))
         z((z))
     end
 
-    subgraph B["B"]
+    subgraph B
         a((a))
         b((b))
         c((c))
@@ -261,3 +261,9 @@ flowchart LR
 
 In parole povere la suriettivita' e' la totalita' da `B` verso `A`, infatti:  
 > Una funzione $f: A \to B$ e' suriettiva se e solo se la sua relazione inversa $f^{-1}: B \to A$ e' totale
+
+|Relazioni|Suriettiva ?|
+|-|-|
+|$Id_A : A \leftrightarrow A$|si $\checkmark$|
+|$A\times B: A \leftrightarrow B$| si se $A \ne \varnothing$ o se $B = \varnothing$|
+|$\varnothing: A \leftrightarrow B$| si se $B = \varnothing$|
