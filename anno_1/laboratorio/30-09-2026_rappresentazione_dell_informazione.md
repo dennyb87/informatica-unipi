@@ -115,18 +115,16 @@ Per questo motivo in questa rappresentazione, quando si ha un riporto che supera
 
 Ad esempio per la somma $2 -1 = 1$ si ha allora che:  
 
-$$
-\begin{array}{rcccc}
-\text{Riporti:} & 1 & 0 & 0 & \\
-& 0 & 1 & 0 & \text{(+2)} \\
-+ & 1 & 1 & 0 & \text{(-1)} \\
-\hline
-1 \mid & 0 & 0 & 0 & \text{(riporto esterno 1)} \\
-+ & 0 & 0 & 1 & \text{(somma del riporto finale all'LSB)} \\
-\hline
-& \mathbf{0} & \mathbf{0} & \mathbf{1} & \mathbf{(+1)}
-\end{array}
-$$
+```
+Riporti:  1 0 0 
+          0 1 0   (+2)
++         1 1 0   (-1)
+----------------
+1 |       0 0 0   (riporto esterno 1)
++         0 0 1   (somma del riporto finale all'LSB)
+----------------
+          0 0 1   (+1)
+```
 
 Funziona perche' -1 invertito equivale al valore 6 ovvero `001` $\rightarrow$ `110`. Questo significa che se partendo da 2 (`010`) aggiungiamo 6, compieremmo 6 passi in senso orario arrivando fino a `000`. 
 
