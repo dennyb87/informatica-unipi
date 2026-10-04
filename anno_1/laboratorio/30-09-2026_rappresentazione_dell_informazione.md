@@ -186,8 +186,8 @@ Dove:
 Nello standard **IEEE 754** in base 2:
 $$\pm r = \pm m \cdot 2^E$$
 
-### Underflow
-Si verifica quando un'operazione (tipicamente una sottrazione tra numeri quasi uguali o divisioni) produce un valore troppo piccolo vicinissimo allo zero, non rappresentabile con la precisione a disposizione.
+#### Underflow
+In questa rappresentazione continua a permanere il problema dell'overflow,  e si aggiunge quello dell'overflow. Questo si verifica quando un'operazione (tipicamente una sottrazione tra numeri quasi uguali o divisioni) produce un valore troppo piccolo vicinissimo allo zero, non rappresentabile con la precisione a disposizione.
 
 # Rappresentazione dei Numeri Reali (IEEE 754)
 
