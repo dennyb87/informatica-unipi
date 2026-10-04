@@ -171,33 +171,17 @@ Con questa rappresentazione si ha quindi:
   2. **Sommatori unificati:** La sottrazione si riduce a una somma $a - b = a + (-b)$.
   3. **Gestione naturale dell'overflow:** nessun riporto o circuiti dedicati 
 
----
+# Rappresentazione dei Numeri Reali (IEEE 754)
 
-## Numeri Reali (Virgola Mobile / IEEE 754)
-
-I numeri reali si rappresentano in notazione scientifica:
-$$x = \pm m \cdot B^E$$
+I numeri reali si rappresentano in notazione scientifica. Nello standard **IEEE 754** in base 2:
+$$x = \pm m \cdot 2^E$$
 
 Dove:
 * $\pm$: Bit di **Segno**
 * $m$: **Mantissa** (frazione)
 * $E$: **Esponente**
 
-Nello standard **IEEE 754** in base 2:
-$$\pm r = \pm m \cdot 2^E$$
 
-#### Underflow
-In questa rappresentazione continua a permanere il problema dell'overflow,  e si aggiunge quello dell'overflow. Questo si verifica quando un'operazione (tipicamente una sottrazione tra numeri quasi uguali o divisioni) produce un valore troppo piccolo vicinissimo allo zero, non rappresentabile con la precisione a disposizione.
-
-# Rappresentazione dei Numeri Reali (IEEE 754)
-
-La rappresentazione in virgola mobile esprime i numeri reali in **notazione scientifica binaria**:
-
-$$V = (-1)^S \times (1 + M) \times 2^{E}$$
-
-* **Segno ($S$):** 1 bit (`0` = positivo, `1` = negativo).
-* **Esponente ($E$):** Memorizza la potenza di 2
-* **Mantissa ($M$):** Rappresenta la parte frazionaria
 
 | **sign** | **exponent** | **mantissa** |
 | :---: | :---: | :---: |
