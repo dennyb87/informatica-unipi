@@ -116,15 +116,15 @@ Per questo motivo in questa rappresentazione, quando si ha un riporto che supera
 Ad esempio per la somma $2 -1 = 1$ si ha allora che:  
 
 $$
-\begin{array}{r c c c l}
+\begin{array}{rcccc}
 \text{Riporti:} & 1 & 0 & 0 & \\
-& 0 & 1 & 0 & \quad (+2) \\
-+ & 1 & 1 & 0 & \quad (-1) \\
+& 0 & 1 & 0 & \text{(+2)} \\
++ & 1 & 1 & 0 & \text{(-1)} \\
 \hline
-1 \; | & 0 & 0 & 0 & \quad (\text{riporto esterno } 1) \\
-+ & 0 & 0 & 1 & \quad (\text{somma del riporto finale all'LSB}) \\
+1 \mid & 0 & 0 & 0 & \text{(riporto esterno 1)} \\
++ & 0 & 0 & 1 & \text{(somma del riporto finale all'LSB)} \\
 \hline
-& \mathbf{0} & \mathbf{0} & \mathbf{1} & \quad (\mathbf{+1})
+& \mathbf{0} & \mathbf{0} & \mathbf{1} & \mathbf{(+1)}
 \end{array}
 $$
 
