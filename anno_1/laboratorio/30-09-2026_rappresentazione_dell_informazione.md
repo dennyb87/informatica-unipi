@@ -97,9 +97,8 @@ Senza circuiti condizionali aggiuntivi per separare il segno dal modulo, l'hardw
 Risolve il problema principale della rappresentazione in modulo e segno: permette di eseguire le sottrazioni usando lo stesso circuito addizionatore delle somme, trasformando $A - B$ in una semplice addizione $A + (\sim B)$.
 
 #### Come funziona
-* **Numeri positivi:** Iniziano con bit di segno `0` e mantengono il loro valore binario standard.
-* **Numeri negativi:** Si ottengono invertendo ogni singolo bit del corrispondente positivo con un'operazione logica `NOT` ($a \to \bar{a}$).
-  * *Esempio (3 bit):* $+2_{10} = \mathbf{010}_2 \implies -2_{10} = \mathbf{101}_2$.
+* **Numeri positivi:** Iniziano con bit di segno `0` e mantengono il loro valore binario standard
+* **Numeri negativi:** Si ottengono invertendo ogni singolo bit del corrispondente positivo con un'operazione logica `NOT` ($a \to \bar{a}$)
 
 #### Riporto di fine giro  
 
