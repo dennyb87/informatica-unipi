@@ -1,4 +1,4 @@
-### Massimo di un insieme
+## Massimo di un insieme
 Sia $A \subset \mathbb{R}$, con $A \neq \emptyset$. Un elemento $m \in \mathbb{R}$ si dice **massimo di $A$** se:
 1. $m \in A$
 2. $m \ge a \quad \forall a \in A$
@@ -19,7 +19,7 @@ In analogo si ha che il minimo e' $\min(A) = 0$
 
 > **Osservazione:** Se un insieme e' *aperto a destra*, non ha massimo. In modo analogo, se e' *aperto a sinistra*, non ha minimo.
 
-### Maggiorante e Insieme dei Maggioranti
+## Maggiorante e Insieme dei Maggioranti
 Dato $A \subset \mathbb{R}, A \neq \emptyset$, un numero $k \in \mathbb{R}$ si dice **maggiorante di $A$** se:
 $$k \ge a \quad \forall a \in A$$
 
@@ -45,7 +45,7 @@ $A \subset \mathbb{R}$ si dice **limitato** se e' sia inferiormente che superior
 
 
 
-## 2. Estremo Superiore ed Estensione di $\mathbb{R}$
+## Estremo Superiore ed Estensione di $\mathbb{R}$
 
 ### **Teorema (Sull'estremo superiore)**
 Sia $A \subset \mathbb{R}, A \neq \emptyset$ e superiormente limitato.
@@ -82,16 +82,14 @@ in modo che valga $-\infty \le x \le +\infty \quad \forall x \in \overline{\math
 #### **Forme Indeterminate:**
 $$0 \cdot (-\infty), \quad 0 \cdot (+\infty), \quad +\infty + (-\infty), \quad -\infty + (+\infty)$$
 
-# Parte Intera e Proprieta' in $\mathbb{Z}$
+# Parte Intera e proprieta' in $\mathbb{Z}$
 
 > **Osservazione:** Dato $A \subset \mathbb{Z}, A \neq \emptyset$:
-> * Se $A$ è limitato superiormente, allora **ha massimo**.
-> * Se $A$ è limitato inferiormente, allora **ha minimo**.
-> *(Valido poiché $\mathbb{Z}$ è un insieme discreto).*
+> * Se $A$ e' limitato superiormente, allora **ha massimo**.
+> * Se $A$ e' limitato inferiormente, allora **ha minimo**.
+> *(Valido poiche' $\mathbb{Z}$ e' un insieme discreto).*
 
----
-
-### **Definizione: Parte Intera**
+## Parte Intera
 Dato $x \in \mathbb{R}$, si dice **parte intera di $x$** (e si indica con $[x]$) il numero massimo:
 $$[x] = \max\{m \in \mathbb{Z} : m \le x\}$$
 
@@ -100,19 +98,17 @@ $$[x] = \max\{m \in \mathbb{Z} : m \le x\}$$
   * $\left[\frac{25}{10}\right] = [2.5] = 2$
   * $\left[-\frac{25}{10}\right] = [-2.5] = -3$
 
----
-
-## 4. Estremi e Massimo di Funzioni
+## Estremi e Massimo di Funzioni
 
 Siano $A \subset \mathbb{R}$ e $f: A \to \mathbb{R}$.
 
-a) $f$ si dice **limitata superiormente (o inferiormente)** se lo è l'insieme immagine $f(A)$.
-b) $f$ ha **massimo** se $f(A)$ ha massimo. Si dice che $M = \max(f) = \max(f(A))$. *(Stesso discorso per $\min(f)$).*
-c) $\sup(f) = \sup(f(A))$. Se $f$ non è limitata superiormente, si scrive $\sup(f) = +\infty$.
-d) Se $f$ ha massimo, ogni $x_0 \in A$ tale che $f(x_0) = \max(f)$ si dice **punto di massimo** per $f$. *(Stesso per i punti di minimo).*
+* $f$ si dice **limitata superiormente (o inferiormente)** se lo e' l'insieme immagine $f(A)$
+* $f$ ha **massimo** se $f(A)$ ha massimo. Si dice che $M = \max(f) = \max(f(A))$. *(Stessa cosa per $\min(f)$).*
+* $\sup(f) = \sup(f(A))$. Se $f$ non e' limitata superiormente, si scrive $\sup(f) = +\infty$
+* Se $f$ ha massimo, ogni $x_0 \in A$ tale che $f(x_0) = \max(f)$ si dice **punto di massimo** per $f$. *(Stesso per i punti di minimo).*
 
 > **Osservazione:**
-> * Il massimo di $f$ (se esiste) è **unico**.
+> * Il massimo di $f$ (se esiste) e' **unico**.
 > * I **punti di massimo** possono essere molti.
 >
 > *Esempio:* $f(x) = \sin(x) \implies \max(f) = 1$, mentre i punti di massimo sono $x = \frac{\pi}{2} + 2k\pi \quad \forall k \in \mathbb{Z}$.
@@ -125,14 +121,13 @@ d) Se $f$ ha massimo, ogni $x_0 \in A$ tale che $f(x_0) = \max(f)$ si dice **pun
 
 ### **Osservazione sulle Funzioni Crescenti**
 Dati $A \subset \mathbb{R}$ e $f: A \to \mathbb{R}$:
-1. Se $A$ ha massimo e $f$ è debolmente/strettamente crescente $\implies f$ ha massimo e $\max(f) = f(\max(A))$.
+1. Se $A$ ha massimo e $f$ e' debolmente/strettamente crescente $\implies f$ ha massimo e $\max(f) = f(\max(A))$.
 2. Se $A$ ha minimo e $f$ è debolmente/strettamente crescente $\implies f$ ha minimo e $\min(f) = f(\min(A))$.
 
 ---
 
-## 5. Valore Assoluto
+# Valore Assoluto
 
-### **Definizione**
 Si dice **valore assoluto** di $x \in \mathbb{R}$ il numero:
 $$|x| = \max\{-x, x\}$$
 
@@ -150,25 +145,26 @@ $$|x| = \max\{-x, x\}$$
 
 > **Nota:** Un'equazione del tipo $|x| \le -2$ **non ha soluzione!**
 
----
-
 ### **Disuguaglianza Triangolare**
 Dati $a, b \in \mathbb{R}$, si ha che:
 1. $|a + b| \le |a| + |b|$
 2. $\left| |a| - |b| \right| \le |a - b|$
 
----
+> Se ti muovi di due passi nella stessa direzione, le distanze si sommano esattamente ($\vert{}a + b\vert{} = \vert{}a\vert{} + \vert{}b\vert{}$). Se invece muovi un passo a destra e uno a sinistra (cambi direzione, formando un "angolo" o un'inversione), la distanza netta dal punto di partenza sara' strettamente inferiore alla somma dei due passi singoli ($\vert{}a + b\vert{} < \vert{}a\vert{} + \vert{}b\vert{}$).In sintesi: il nome deriva dal fatto che il percorso diretto non e' mai piu' lungo di un percorso con una deviazione intermedia (che forma i tre lati di un triangolo).
 
 #### **Dimostrazione Disuguaglianza Triangolare (Punto 1)**
-Dalla proprietà 6 del valore assoluto sappiamo che:
+Dalla proprieta' 6 del valore assoluto sappiamo che:
 $$-|a| \le a \le |a|$$
 $$-|b| \le b \le |b|$$
 
 Sommando membro a membro le due disuguaglianze:
 $$-(|a| + |b|) \le a + b \le |a| + |b|$$
 
-Applicando la Proprietà 7 con $x = a + b$ e $M = |a| + |b|$, otteniamo direttamente:
+
+Applicando la proprieta' 7 con $x = a + b$ e $M = |a| + |b|$, otteniamo direttamente:
 $$|a + b| \le |a| + |b|$$
 
-> **Osservazione (Estensione):**
+La proprieta' 7 richiede che $M \ge 0$. Poiche' il valore assoluto e' sempre non negativo ($\vert{}a\vert{} \ge 0$ e $\vert{}b\vert{} \ge 0$), la loro somma $M = \vert{}a\vert{} + \vert{}b\vert{}$ e' sicuramente $\ge 0$. La regola e' quindi valida ed eseguibile.
+
+> **Osservazione (estensione):**
 > $$|a + b + c| \le |a| + |b| + |c|$$
