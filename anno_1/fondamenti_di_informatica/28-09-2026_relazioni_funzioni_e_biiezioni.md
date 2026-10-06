@@ -196,8 +196,8 @@ $$\mathcal{P}(A) \cong \text{Fun}(A, 2)$$
 
 ```mermaid
 graph LR
-    subgraph A [Insieme A]
-        subgraph B [Sottoinsieme B]
+    subgraph A [Insieme A<sub>1</sub>]
+        subgraph B [Sottoinsieme A<sub>2</sub>]
             b1((.))
             b2((.))
         end
