@@ -189,7 +189,7 @@ $$T_0 = \frac{0 \cdot (0 + 1)}{2} \implies 0 = 0 \quad \checkmark \text{ (Vero p
 * **Tesi ($P(n+1)$):** $T_{n+1} = \frac{(n+1)(n+2)}{2}$
 
 **Dimostrazione:**
-$$T_{n+1} = T_n + (n+1) \quad \text{\{dalla definizione induttiva di} T_{n+1}\}$$
+$$T_{n+1} = T_n + (n+1) \quad \{\text{dalla def. induttiva di } T_{n+1}\}$$
 $$= \frac{n(n+1)}{2} + (n+1) \quad \text{\{sostituzione dell'Ipotesi Induttiva\}}$$
 $$= \frac{n(n+1) + 2(n+1)}{2} \quad \text{\{fattorizzazione con denominatore comune\}}$$
 $$= \frac{(n+1)(n+2)}{2} \quad \checkmark$$
