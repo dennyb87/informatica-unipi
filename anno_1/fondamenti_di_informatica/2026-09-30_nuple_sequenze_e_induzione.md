@@ -231,6 +231,6 @@ $$
 ### Attenzione ai tranelli dell'induzione
 Quando si applica il principio di induzione, occorre fare attenzione che la catena di implicazioni $P(n) \implies P(n+1)$ sia valida per **tutti** i valori di $n$ nel dominio dell'induzione. 
 
-Un celebre controesempio e' il [Paradosso di Polya](https://en.wikipedia.org/wiki/All_horses_are_the_same_color) ("Tutti i cavalli sono dello stesso colore")**:
+Un celebre controesempio e' il [Paradosso di Polya](https://en.wikipedia.org/wiki/All_horses_are_the_same_color) (*"Tutti i cavalli sono dello stesso colore"*):
 * $P(1)$ e' ovviamente vero (un insieme di 1 cavallo ha un solo colore).
 * Il passo $P(1) \implies P(2)$ fallisce perche' richiede che due insiemi di dimensione 1 abbiano un'intersezione non vuota su cui "sovrapporre" il colore comune, cosa non vera per $n=1$.
