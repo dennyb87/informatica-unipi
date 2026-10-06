@@ -218,10 +218,14 @@ $$S_0 = 0^2 \implies 0 = 0 \quad \checkmark$$
 * **Tesi:** $S_{n+1} = (n+1)^2$
 
 **Dimostrazione:**
-$$S_{n+1} = S_n + 2n + 1 \quad \text{\{per def. induttiva\}}$$
-$$= n^2 + 2n + 1 \quad \text{\{per Ipotesi Induttiva\}}$$
-$$= (n+1)^2 \quad \checkmark \text{ (sviluppo del quadrato di binomio)}$$
 
+$$
+\begin{aligned}
+S_{n+1} &= S_n + 2n + 1 && \{ \text{per def. induttiva} \} \\
+&= n^2 + 2n + 1 && \{ \text{per Ipotesi Induttiva} \} \\
+&= (n+1)^2 \quad \checkmark && \{ \text{sviluppo del quadrato di binomio} \}
+\end{aligned}
+$$
 ---
 
 ### Attenzione ai tranelli dell'induzione
