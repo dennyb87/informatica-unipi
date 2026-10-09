@@ -116,7 +116,7 @@ Per verificare se $\sqrt{9} = 3 \in \mathbb{N}$, applichiamo le clausole a ritro
 #### Esempio Negativo: $2.7 \in \mathbb{N}$?
 1. C.B.: $2.7 = 0$? No. C.I.: $\to$ $2.7 = 1.7 + 1$ (ok se $1.7 \in \mathbb{N}$)
 2. C.B.: $1.7 = 0$? No. C.I.: $\to$ $1.7 = 0.7 + 1$ (ok se $0.7 \in \mathbb{N}$)
-3. C.B.: $0.7 = 0$? No. C.I.: $\to$ $0.7 = -0.3 + 1$ (*Proseguendo all'infinito nel campo negativo, non si incontra mai la Clausola Base $0$, quindi $2.7 \notin \mathbb{N}$.*
+3. C.B.: $0.7 = 0$? No. C.I.: $\to$ $0.7 = -0.3 + 1$ (Proseguendo all'infinito nel campo negativo, non si incontra mai la Clausola Base $0$, quindi $2.7 \notin \mathbb{N}$)
 
 ---
 
