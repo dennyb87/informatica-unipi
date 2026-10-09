@@ -96,7 +96,7 @@ flowchart TD
 Per definire induttivamente un insieme $A$:
 1. **Clausola Base (C.B.):** Specifica i primi elementi atomici che appartengono ad $A$.
 2. **Clausola Induttiva (C.I.):** Specifica la regola per costruire nuovi elementi di $A$ a partire da elementi gia' appartenenti ad $A$.
-3. **Clausola di chiusura:** Specifica che $A$ non contiene altri elementi oltre a quelli generati da 1 e 2 (spesso riassunta nella formula "$\mathbb{N}$ *e' il più piccolo insieme che soddisfa*"... e percio' omessa).
+3. **Clausola di chiusura:** Specifica che $A$ non contiene altri elementi oltre a quelli generati da 1 e 2 (spesso riassunta nella formula e.g. $\mathbb{N}$ e' il piu' piccolo insieme che soddisfa... e percio' omessa).
 
 ---
 
