@@ -65,7 +65,8 @@ Se $A = \{a, b\}$:
 ## Sequenze di Lunghezza Arbitraria
 Consideriamo la famiglia di insiemi delle sequenze di ogni lunghezza possibile $\{ A^i \mid i \in \mathbb{N} \}$.
 
-L'operatore $A^*$ definisce l'unione infinita di tutte le $n$-uple:
+L'operatore $A^\star$ definisce l'unione infinita di tutte le $n$-uple:  
+
 $$A^* = \bigcup_{i \in \mathbb{N}} A^i = A^0 \cup A^1 \cup A^2 \cup \dots$$
 
 * **Applicazione pratica:** Se $AN$ e' l'insieme dei caratteri alfanumerici, allora $AN^*$ rappresenta **l'insieme di tutte le possibili stringhe** composte da caratteri alfanumerici.
