@@ -222,9 +222,9 @@ $$S_0 = 0^2 \implies 0 = 0 \quad \checkmark$$
 
 $$
 \begin{aligned}
-S_{n+1} &= S_n + 2n + 1 && \{ \text{per def. induttiva} \} \\
-&= n^2 + 2n + 1 && \{ \text{per Ipotesi Induttiva} \} \\
-&= (n+1)^2 \ \ \ \ \text{OK} && \{ \text{sviluppo del quadrato di binomio} \}
+S_{n+1} &= S_n + 2n + 1 && \text{(per definizione induttiva)} \\
+&= n^2 + 2n + 1 && \text{(per ipotesi induttiva)} \\
+&= (n+1)^2 \quad \text{OK} && \text{(sviluppo del quadrato di binomio)}
 \end{aligned}
 $$
 ---
