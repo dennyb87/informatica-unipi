@@ -224,7 +224,7 @@ $$
 \begin{aligned}
 S_{n+1} &= S_n + 2n + 1 && \{ \text{per def. induttiva} \} \\
 &= n^2 + 2n + 1 && \{ \text{per Ipotesi Induttiva} \} \\
-&= (n+1)^2 \quad \checkmark && \{ \text{sviluppo del quadrato di binomio} \}
+&= (n+1)^2 \quad \text{✓} && \{ \text{sviluppo del quadrato di binomio} \}
 \end{aligned}
 $$
 ---
