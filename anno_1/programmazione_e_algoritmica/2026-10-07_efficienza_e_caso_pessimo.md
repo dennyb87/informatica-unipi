@@ -109,5 +109,13 @@ graph TD
 ### Domanda Fondamentale
 $\log_2 n$ confronti sono **necessari**, ma sono anche **sufficienti**?
 
-> **Risposta:** No, $\log_2 n$ e' solo un limite inferiore derivante dall'informazione, ma non tiene conto della struttura del problema. 
-> Usando la **tecnica degli "eventi contabili"** (o argomento dell'avversario), si dimostra che per eliminare $n-1$ candidati ed essere certi di aver trovato il minimo servono effettivamente **$n - 1$ confronti**.
+> **Risposta:** No, $\log_2 n$ e' solo un limite inferiore ideale che non tiene conto della struttura del problema. E' possibile infatti dimostrare che a seconda del problema per essere certi di aver trovato il minimo servono effettivamente **$n - 1$ confronti**.
+
+
+### Dove $\log_2 n$ FUNZIONA: 
+
+Trovare un numero in un elenco ordinatoEsempio: Hai la lista ordinata `[10, 20, 30, 40, 50, 60, 70, 80]` ($n = 8$) e cerchi il 70.Come funziona: Guardi il valore al centro (40). Siccome $70 > 40$, scarti in un colpo solo meta' elenco (10, 20, 30, 40). Risultato: Ogni confronto dimezza le opzioni. Servono al massimo $\log_2(8) = \mathbf{3}$ confronti.2.  
+
+### Dove $\log_2 n$ NON FUNZIONA:  
+
+Trovare il minimo in un elenco disordinatoEsempio: Hai i numeri casuali `[42, 12, 89, 5]` ($n = 4$) e vuoi trovare il minimo. Perche' non funziona: Se confronti due numeri (es. $42$ e $12$), scopri solo che $12$ e' piu' piccolo, ma non impari nulla sugli altri numeri ($89$ e $5$). Non puoi mai dimezzare l'elenco. Risultato: Teoricamente $\log_2(4) = 2$, ma per escludere con certezza gli altri 3 candidati devi per forza fare $n - 1 = \mathbf{3}$ confronti.
