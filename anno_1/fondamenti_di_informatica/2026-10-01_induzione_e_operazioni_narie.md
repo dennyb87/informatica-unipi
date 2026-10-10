@@ -62,9 +62,9 @@ Sia $\otimes$ una generica operazione binaria definita su un insieme $S \times S
 
 ---
 
-## 3. Sommatoria, Produttoria e Operazioni Generiche
+## Sommatoria, Produttoria e Operazioni Generiche
 
-### 3.1 Definizione di Sommatoria ($\sum$)
+### Definizione di Sommatoria $\sum$
 Sia $a : \mathbb{N}^+ \to \mathbb{N}$ una successione $a_1, a_2, \dots, a_n$.
 
 * **Definizione Informale:** $\sum_{i=1}^n a_i = a_1 + a_2 + \dots + a_n$ *(non sufficiente per dimostrazioni formali)*
@@ -77,7 +77,7 @@ Sia $a : \mathbb{N}^+ \to \mathbb{N}$ una successione $a_1, a_2, \dots, a_n$.
 
 ---
 
-### 3.2 Numeri Triangolari e Somma dei Dispari
+### Numeri Triangolari e somma dei dispari
 
 I **Numeri Triangolari** rappresentano la somma dei primi $n$ interi:
 $$T_n = 1 + 2 + \dots + n = \sum_{i=1}^n i$$
@@ -96,12 +96,15 @@ $$\sum_{i=1}^n (2i - 1) = n^2$$
    **Svolgimento:**
    $$\sum_{i=1}^{n+1} (2i - 1) = \left( \sum_{i=1}^n (2i - 1) \right) + (2(n+1) - 1)$$
 
-   Sostituendo l'ipotesi induttiva:
-   $$= n^2 + (2n + 2 - 1) = n^2 + 2n + 1 = (n+1)^2 \quad \checkmark$$
+   Sostituiamo $n^2$ alla sommatoria (ipotesi induttiva):
+   $$= n^2 + (2(n+1) - 1)$$
+   $$ = n^2 + 2n + 2 - 1$$  
+   $$= n^2 + 2n + 1$$  
+   $$= (n+1)^2 \quad \checkmark$$
 
 ---
 
-### 3.3 Estensione ad Altre Operazioni $n$-arie
+### Estensione ad altre operazioni $n$-arie
 
 Tutte le operazioni binarie associative dotate di elemento neutro possono essere estese a versione $n$-aria:
 
@@ -117,7 +120,7 @@ Tutte le operazioni binarie associative dotate di elemento neutro possono essere
 
 ---
 
-## 4. Leggi di De Morgan $n$-arie
+## Leggi di De Morgan $n$-arie
 
 La legge di De Morgan standard per due insiemi afferma che $\overline{A \cup B} = \bar{A} \cap \bar{B}$.  
 Vogliamo verificare se vale per un generico $n$ di insiemi:
