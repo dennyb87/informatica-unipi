@@ -42,7 +42,7 @@ $$(n+1)! \ge 2^n \quad \checkmark$$
 
 ---
 
-## 2. Operatori $n$-ari, Associatività ed Elementi Neutri
+## Operatori $n$-ari, Associatività ed Elementi Neutri
 
 Sia $\otimes$ una generica operazione binaria definita su un insieme $S \times S \to S$:
 
