@@ -55,7 +55,7 @@ Sia $\otimes$ una generica operazione binaria definita su un insieme $S \times S
 | :--- | :---: | :---: |
 | $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ | $+$ (Somma) | $0$ |
 | $\mathbb{N} \times \mathbb{N} \to \mathbb{N}$ | $\cdot$ (Prodotto) | $1$ |
-| $\text{Sets} \times \text{Sets}$ | $\cup$ (Unione) | $\emptyset$ |
+| $\text{Sets} \times \text{Sets}$ | $\cup$ (Unione) | $\varnothing$ |
 | $\text{Sets} \times \text{Sets}$ | $\cap$ (Intersezione) | $U$ (Insieme Universo) |
 | $\text{Bool} \times \text{Bool}$ | $\land$ (AND) | $\text{True}$ |
 | $\text{Bool} \times \text{Bool}$ | $\lor$ (OR) | $\text{False}$ |
@@ -113,7 +113,7 @@ Tutte le operazioni binarie associative dotate di elemento neutro possono essere
   * Caso Base: $\prod_{i=1}^0 a_i = 1$ (elemento neutro della moltiplicazione)
 * **Unione $n$-aria:** 
   $$\bigcup_{i=k}^n A_i = A_k \cup A_{k+1} \cup \dots \cup A_n$$
-  * Caso Base: $\bigcup_{i=1}^0 A_i = \emptyset$
+  * Caso Base: $\bigcup_{i=1}^0 A_i = \varnothing$
 * **Intersezione $n$-aria:** 
   $$\bigcap_{i=k}^n A_i = A_k \cap A_{k+1} \cap \dots \cap A_n$$
   * Caso Base: $\bigcap_{i=1}^0 A_i = U$
@@ -129,8 +129,10 @@ $$\overline{\bigcup_{i=1}^n A_i} = \bigcap_{i=1}^n \bar{A}_i$$
 
 ### Dimostrazione per Induzione
 
+> **Osservazione:** quando si applica un operatore su zero elementi il risultato deve essere l'elemento neutro di quell'operazione. Per questo motivo per il caso base dell'intersezione si ha $U$ e per l'unione $\overline{\varnothing} = U$
+
 * **Caso Base ($n=0$):**
-  $$\overline{\bigcup_{i=1}^0 A_i} = \bar{\emptyset} = U$$
+  $$\overline{\bigcup_{i=1}^0 A_i} = \bar{\varnothing} = U$$
   $$\bigcap_{i=1}^0 \bar{A}_i = U$$
   Quindi $U = U$ $\checkmark$.
 
