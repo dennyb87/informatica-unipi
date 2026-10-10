@@ -65,7 +65,14 @@ int vuoti = (k * scatole) - n;
 ```
 
 ### Perche `(n + k - 1) / k`?
-La divisione intera standard effettua il troncamento verso il basso (floor $\lfloor n/k \rfloor$). Aggiungendo $(k - 1)$ al numeratore, qualsiasi resto $R > 0$ fara' scattare il quoziente intero al valore successivo, mentre se $n$ e' un multiplo esatto di $k$, la quantita' $(k-1)$ non basta a incrementare il quoziente.
+
+Si noti che:  
+
+$$(n + k - 1) / k = \frac{n}{k} + \frac{k - 1}{k}$$  
+
+Si ha quindi che se nella prima frazione $n$ e' multiplo di $k$ allora si ha resto zero e $\frac{k - 1}{k}$ aggiungera' un valore minore di 1 che verra' scartato dalla divisione intera.  
+
+Se invece $n$ non e' multiplo la prima frazione produrra' un resto $R \gt 0$ che sommato a $\frac{k - 1}{k}$ fara' scattare il quoziente intero al valore successivo.
 
 ---
 
