@@ -1,4 +1,4 @@
-## Fattoriale
+# Fattoriale
 
 Il fattoriale di un numero $n \in \mathbb{N}$ si definisce in modo informale come:
 $$n! = 1 \cdot 2 \cdot 3 \cdot ... \cdot n$$
@@ -26,14 +26,14 @@ $$n! \ge 2^{n-1} \quad \forall n \in \mathbb{N}^+$$
 **Dimostrazione:**
 $$(n+1)! = (n+1) \cdot n!$$
 
-Per ipotesi induttiva sappiamo che $n! \ge 2^{n-1}$ quindi moltiplicando per $(n+1)$ ($n \in \mathbb{Z}^+$ quindi positivo) otteniamo:  
+Per ipotesi induttiva sappiamo che $n! \ge 2^{n-1}$ quindi moltiplicando per $(n+1)$ la disuguaglianza continua a valere ($n \in \mathbb{Z}^+$ quindi positivo) ottenendo:  
 $$(n+1)! = (n+1) \cdot n! \ge (n+1) \cdot 2^{n-1}$$  
 
 Semplificando e concentrandoci sulla disequazione...  
 
 $$(n+1)! \ge (n+1) \cdot 2^{n-1}$$
 
-Ora vogliamo dimostrare che $(n+1) \cdot 2^{n-1} \ge 2^n$ e sapendo con certezza che $(n+1) \ge 2$. Sostituiamo solo il blocco $(n+1)$ con il numero $2$ al termine destro, lasciando il fattore $2^{n-1}$ intatto:  
+Ora vogliamo dimostrare che $(n+1) \cdot 2^{n-1} \ge 2^n$ e sapendo con certezza che $(n+1) \ge 2$ essendo $n \in \mathbb{N}$ possiamo sostituire il solo blocco $(n+1)$ con il numero $2$ (che e' il minimo possibile) al termine destro, lasciando il fattore $2^{n-1}$ intatto:  
 
 $$(n+1) \cdot 2^{n-1} \ge 2 \cdot 2^{n-1} = 2^n$$  
 
