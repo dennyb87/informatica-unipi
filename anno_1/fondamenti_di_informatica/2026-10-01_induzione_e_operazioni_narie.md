@@ -154,16 +154,15 @@ $$\overline{\bigcup_{i=1}^n A_i} = \bigcap_{i=1}^n \bar{A}_i$$
 
 ---
 
-## 5. Sequenza di Fibonacci e Induzione Forte
+# Sequenza di Fibonacci e Induzione Forte
 
-### 5.1 Proprietà di Fibonacci
-Data la sequenza di Fibonacci $f_n$, si può dimostrare per induzione la seguente proprietà per $\forall n \in \mathbb{N}^+$:
+Data la sequenza di Fibonacci $f_n$, si puo' dimostrare per induzione la seguente proprieta' per $\forall n \in \mathbb{N}^+$:
 
 $$\sum_{i=1}^n f_i^2 = f_n \cdot f_{n+1}$$
 
 ---
 
-### 5.2 Principio di Induzione Forte sui Naturali
+### Principio di Induzione Forte sui Naturali
 
 Mentre nell'induzione classica si assume vera la proprietà solo per $n$ per dimostrare $n+1$, nell'**Induzione Forte** si assume la proprietà vera per **tutti gli elementi minori di $n$**.
 
@@ -179,7 +178,7 @@ graph LR
 
 ---
 
-### 5.3 Applicazione: Teorema Fondamentale dell'Aritmetica
+### Applicazione: Teorema Fondamentale dell'Aritmetica
 
 Un classico esempio di applicazione dell'induzione forte è la dimostrazione del **Teorema Fondamentale dell'Aritmetica**:
 
