@@ -1,6 +1,6 @@
 # Continuita'
 
-<img src="./assets/continuity.jpg" width="300px" />  
+<img src="./assets/continuity.jpg" width="400px" />  
 
 **Definizione:** Dati $A \subseteq \mathbb{R}$, $x_0 \in A$ e $f: A \to \mathbb{R}$, si dice che $f$ e' **continua** in $x_0$ se:
 $$\forall \varepsilon > 0, \exists \delta > 0 \text{ t.c. } \forall x \in A, |x - x_0| < \delta \implies |f(x) - f(x_0)| < \varepsilon$$
