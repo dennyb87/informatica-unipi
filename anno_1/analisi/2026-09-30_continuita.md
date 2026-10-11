@@ -77,7 +77,7 @@ x - 1 & \text{se } x > 2
 - $f(x) = x$ e' continua (tutti i polinomi sono continui)
 - Le funzioni razionali $f(x) = \frac{P(x)}{Q(x)}$ sono continue nel loro dominio
 - $f(x) = \frac{1}{x}$ e' continua nel suo dominio $\mathbb{R} \setminus \{0\}$
-- $e^x, \sin(x), \cos(x), \log(x), \arcsin(x), \arccos(x), \operatorname{tg}(x), \operatorname{arctg}(x)$ sono continue nei rispettivi domini
+- $e^x, \sin(x), \cos(x), \log(x), \arcsin(x), \arccos(x), \tan(x), \arctan(x)$ sono continue nei rispettivi domini
 
 ### Teorema di continuita' della funzione composta
 Siano $f: A \to B$ e $g: B \to \mathbb{R}$, con $x_0 \in A$ e $y_0 = f(x_0) \in B$. 
@@ -109,9 +109,9 @@ Se $f: [a, b] \to \mathbb{R}$ e' una funzione continua su un intervallo chiuso e
 
 **Definizione (Punto di Accumulazione):** Dato $A \subseteq \mathbb{R}$ e $x_0 \in \mathbb{R}$ (anche esteso), $x_0$ si dice **punto di accumulazione** per $A$ se in ogni intorno $V$ di $x_0$ cade almeno un punto di $A$ diverso da $x_0$:
 $$V \cap A \setminus \{x_0\} \neq \varnothing$$
-L'insieme dei punti di accumulazione si indica con $\operatorname{Acc}(A)$.
+L'insieme dei punti di accumulazione si indica con $\text{Acc}(A)$.
 
 ### Esempi:
-1. $A = (2, 3) \implies \operatorname{Acc}(A) = [2, 3]$
-2. $A = (3, +\infty) \implies \operatorname{Acc}(A) = [3, +\infty)$
-3. $A = \mathbb{N}$ $\implies$ i punti isolati non sono di accumulazione. Per $\mathbb{N}$, l'unico punto di accumulazione al finito non esiste; l'unico punto di accumulazione e' $+\infty$, quindi $\operatorname{Acc}(\mathbb{N}) = \{+\infty\}$.
+1. $A = (2, 3) \implies \text{Acc}(A) = [2, 3]$
+2. $A = (3, +\infty) \implies \text{Acc}(A) = [3, +\infty)$
+3. $A = \mathbb{N}$ $\implies$ i punti isolati non sono di accumulazione. Per $\mathbb{N}$, l'unico punto di accumulazione al finito non esiste; l'unico punto di accumulazione e' $+\infty$, quindi $\text{Acc}(\mathbb{N}) = \{+\infty\}$.
