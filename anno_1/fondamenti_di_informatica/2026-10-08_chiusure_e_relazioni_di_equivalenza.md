@@ -106,7 +106,7 @@ Definiamo gli insiemi:
 
 Tra questi due insiemi esiste una corrispondenza biunivoca (isomorfismo): 
 $$\text{ERel}(A) \cong \text{Part}(A)$$
-Con le funzioni di passaggio tali che $i;j = \text{Id}_{\text{Part}(A)}$ e $j;i = \text{Id}_{\text{ERel}(A)}$
+Con le funzioni di passaggio tali che $i;j = Id_{\text{Part}(A)}$ e $j;i = Id_{\text{ERel}(A)}$
 
 ---
 
