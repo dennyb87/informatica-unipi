@@ -110,9 +110,9 @@ Con le funzioni di passaggio tali che $i;j = Id_{\text{Part}(A)}$ e $j;i = Id_{\
 
 ---
 
-### Verifica della Partizione generata ($J(R)$)
+### Verifica della Partizione generata ($j(R)$)
 Data $R \in \text{ERel}(A)$, la funzione che costruisce la partizione e':
-$$J(R) = \{ [a]_R \mid a \in A \}$$
+$$j(R) = \{ [a]_R \mid a \in A \}$$
 
 Per essere una valida partizione di $A$, deve soddisfare tre proprieta':
 1. **Nessuna classe e' vuota:** $[a]_R \neq \varnothing \quad \checkmark$
