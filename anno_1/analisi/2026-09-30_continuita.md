@@ -62,12 +62,12 @@ Il dominio deve essere necessariamente un intervallo. Se il dominio non e' un in
 
 Sia $f: (-\infty, 1] \cup (2, +\infty) \to \mathbb{R}$ definita a tratti come:  
 
-```math
+$$
 f(x) = \begin{cases} 
 x & \text{se } x \le 1 \\ 
 x - 1 & \text{se } x > 2 
 \end{cases}
-```
+$$
 
 * **E' invertibile?** Sì.
 * **E' continua?** Si, per la definizione di continuita' all'interno del suo dominio (nonostante la presenza dello "strappo" tra $1$ e $2$, quel buco non fa parte del dominio).
