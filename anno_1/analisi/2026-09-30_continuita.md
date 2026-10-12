@@ -10,8 +10,14 @@ In termini di intorni:
 - $|f(x) - f(x_0)| < \varepsilon \iff f(x_0) - \varepsilon < f(x) < f(x_0) + \varepsilon$
 
 ### Esempio di funzione non continua
-Sia $f: \mathbb{R} \to \mathbb{R}$ definita da:
-$$f(x) = \begin{cases} 1 & \text{se } x \ge 0 \\ -1 & \text{se } x < 0 \end{cases}$$
+Sia $f: \mathbb{R} \to \mathbb{R}$ definita da:  
+
+$$
+f(x) = \begin{cases}
+1 & \text{se } x \ge 0 \\
+-1 & \text{se } x < 0 \\
+\end{cases}
+$$
 
 Verifichiamo se $f$ e' continua in $x_0 = 0$:
 - $f(x_0) = f(0) = 1$
