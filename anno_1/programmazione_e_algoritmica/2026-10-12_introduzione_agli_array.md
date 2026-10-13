@@ -20,15 +20,15 @@ int[] voti = [18, 30, 23];
 *   **L'indice parte da zero!** Questo significa che per un array di lunghezza $n$, gli indici validi sono compresi nell'intervallo $[0, n-1]$.
 
 ### Regole fondamentali:
-1.  **La prima locazione contiene la lunghezza:** In termini di modello di memoria, la variabile punta a un indirizzo base ($l_b$) la cui prima cella memorizza la lunghezza dell'array. Questo serve anche a preservare il tipo di dato (altrimenti si potrebbe confondere con un semplice intero).
-2.  **Immutabilità di tipo e lunghezza:** Il tipo degli elementi e la lunghezza dell'array **non possono essere cambiati** dopo la dichiarazione.
-3.  E@ comunque possibile riassegnare la variabile a un nuovo array (es. `voti := [18, 18, 18, 18]`); si possono cambiare i valori degli elementi, ma non la struttura/dimensione originaria.
+1.  **La prima locazione contiene la lunghezza:** In termini di modello di memoria, la variabile punta a un **indirizzo base** $l_b$ (invece che ad un valore), l'indirzzo base a sua volta punta alla cella contenente la lunghezza dell'array. Questo serve anche a preservare il tipo di dato, se la prima cella contenesse la lunghezza di tipo intero non ci sarebbe modo di inferire che stiamo trattando un array.
+2.  **Immutabilita' di tipo e lunghezza:** Il tipo degli elementi e la lunghezza dell'array **non possono essere cambiati** dopo la dichiarazione.
+3.  E' comunque possibile riassegnare la variabile a un nuovo array (es. `voti := [18, 18, 18, 18]`); si possono cambiare i valori degli elementi, ma non la struttura/dimensione originaria.
 
 ---
 
 ## Ambiente e memoria
 
-Il legame tra l'ambiente (variabili) e la memoria RAM è descritto dal seguente schema concettuale:
+Il legame tra l'ambiente (variabili) e la memoria RAM e' descritto dal seguente schema concettuale:
 
 ```mermaid
 graph LR
