@@ -83,10 +83,10 @@ C ::= tutti quelli gia' visti, piu'...
 
 ## Vincoli e limitazioni  
 
-*   **Espressioni booleane negli indici/inizializzazioni:** 
-    Scrivere espressioni come `bool[] b = [true, 1 < 2];` **non è ammesso** se viola i vincoli sintattici della dichiarazione statica dei letterali in questo contesto specifico.
+*   **Espressioni nella dichiarazione esplicita:** 
+    Scrivere espressioni come `bool[] b = [true, 1 < 2];` **non e' ammesso** (le espressioni non sono ammesse nella dichiarazione esplicita)
 *   **Array vuoti:** 
-    Un'istruzione come `int[] voti = new int[0];` non è ammessa (l'array vuoto di dimensione zero non è consentito in questa formulazione).
+    Un'istruzione come `int[] voti = new int[0];` non e' ammessa (l'array vuoto di dimensione zero non e' consentito in questa formulazione).
 
 ---
 
