@@ -9,8 +9,8 @@ Fornire un dimostrazione discorsiva o per sostituzione del seguente enunciato:
 $$
 \begin{aligned}
     R^{op} \cap Id_A &= (R \cap Id_A)^{op} \qquad \{ \text{dist. di} \ ^{op}\ \text{su} \ \cap\} \\
-    &= R^{op} \cap Id_A^{op} \ \ \ \qquad \{ \text{op-id}\} \\
-    &= R^{op} \cap Id_A \qquad \quad \checkmark
+    R^{op} \cap Id_A &= R^{op} \cap Id_A^{op} \ \ \ \qquad \{ \text{op-id}\} \\
+    R^{op} \cap Id_A &= R^{op} \cap Id_A \qquad \quad \checkmark
 \end{aligned}
 $$
 
