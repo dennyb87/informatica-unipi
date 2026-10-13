@@ -38,7 +38,7 @@ graph LR
     end
 
     subgraph Memoria [Memoria]
-        direction TB
+        direction TD
         B1["δ(l_voti) = l_b (Indirizzo Base)"]
         B2["δ(l_b) = 3 (Lunghezza)"]
         B3["δ(l_b + 0) = 18"]
