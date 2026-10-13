@@ -31,7 +31,7 @@ int[] voti = [18, 30, 23];
 Il legame tra l'ambiente (variabili) e la memoria RAM e' descritto dal seguente schema concettuale:
 
 ```mermaid
-graph TD
+graph LR
     subgraph Ambiente [Ambiente]
         direction TD
         A["p(voti) = l_voti"]
@@ -44,6 +44,9 @@ graph TD
         B3["δ(l_b + 0) = 18"]
         B4["δ(l_b + 1) = 30"]
         B5["δ(l_b + 2) = 23"]
+
+        %% Vincoli invisibili per forzare l'ordine verticale esatto
+        B1 ~~~ B2 ~~~ B3 ~~~ B4 ~~~ B5
     end
 
     A -->|Punta alla locazione| B1
