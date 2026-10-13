@@ -65,7 +65,7 @@ Estendiamo la sintassi formale per la manipolazione degli array:
 ### Espression
 
 ```c
-E ::= tutte quelle gia' viste, piu'...
+E ::= // tutte quelle gia' viste, piu'...
     | [V_1, V_2, ..., V_n] //una serie non vuota di valori dello stesso tipo
     | new  Tb[E] // una serie di E elementi positivi, tutti inizializzati al valore di default del tipo Tb
     | Id.length // restituisce la lunghezza dell'array
@@ -75,7 +75,7 @@ E ::= tutte quelle gia' viste, piu'...
 ### Comandi
 
 ```c
-C ::= tutti quelli gia' visti, piu'...
+C ::= // tutti quelli gia' visti, piu'...
     | Id[E_1] := E_2; // modifica il valore in posizione E_1 dell'array `Id` con il valore E_2
 ```
 
