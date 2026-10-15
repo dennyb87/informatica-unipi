@@ -20,7 +20,7 @@ $A = \{a, b, c\}$
 
 $\subseteq_{P(A)} = \{ (X, Y) \in P(A) \times P(A) ∣ X \subseteq Y\}$  
 
-<!-- ```mermaid
+```mermaid
 graph TD
     ABC["{a, b, c}"] --> AB["{a, b}"]
     ABC --> AC["{a, c}"]
@@ -34,7 +34,7 @@ graph TD
     A --> Empty["∅"]
     B --> Empty
     C --> Empty
-``` -->
+```
 
 *Nota bene:* In un ordinamento parziale **non** tutti gli elementi sono necessariamente confrontabili tra loro (es. $\{a\}$ e $\{b, c\}$ non sono legati da inclusione).
 
