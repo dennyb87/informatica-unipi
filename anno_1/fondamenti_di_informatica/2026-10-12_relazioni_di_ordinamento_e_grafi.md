@@ -67,7 +67,7 @@ Possiamo modellare le componenti del ciclo come relazioni insiemistiche:
 
 ### Intuizione
 
-La chiusura $(G; C)^*$ ha generato la *"storia"* di tutti gli stati intermedi attraversati dal programma, producendo coppie come $\{(5, 5), (5, 3), (5, 1), \dots \}$. Infine si ha $(G; C)^*;\overline{G}$ che mette quindi in relazione gli stati intermedi con la condizione di chiusura ovvero $x \le 2$ e scartando tutto il resto.  
+La chiusura $(G; C)^\star$ ha generato la "storia" di tutti gli stati intermedi attraversati dal programma, producendo coppie come $\{(5, 5), (5, 3), (5, 1), \dots \}$. Infine si ha $(G; C)^\star;\overline{G}$ che mette quindi in relazione gli stati intermedi con la condizione di chiusura ovvero $x \le 2$ e scartando tutto il resto.  
 
 $W = \{\dots, (5, 1), (4, 0), (3, 1), (2, 0), \dots\}$  
 
