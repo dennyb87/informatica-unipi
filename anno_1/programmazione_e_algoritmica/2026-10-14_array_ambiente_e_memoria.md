@@ -1,6 +1,6 @@
 ## Valori e riferimenti negli array
 
-Nel nostro modello di esecuzione, l'insieme dei valori gestiti dal programma e' definito come:
+Con l'introduzione degli array dobbiamo espandere l'insieme dei valore gestiti dal nostro pseudo-linguaggio, in particolare abbiamo bisogno delle locazioni (o riferimenti) $\mathbb{L}$:
 
 $$V = \mathbb{Z} \cup \mathbb{B} \cup \mathbb{L}$$
 
