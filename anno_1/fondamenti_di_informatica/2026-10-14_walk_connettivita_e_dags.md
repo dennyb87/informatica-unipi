@@ -17,13 +17,13 @@ Un walk di lunghezza $n$ e' una sequenza di nodi $x = x_0, x_1, \dots, x_n = y$ 
    $$(x, y) \in E^0 \iff x = y \iff \exists \text{ walk di lunghezza 0 da } x \text{ a } y$$
 
 2. **Passo Induttivo ($n \implies n+1$):**
-   Supponiamo che la proprieta' valga per $n$ e dimostriamola per $n+1$:
-   $$(x, y) \in E^{n+1} \iff \{\text{definizione di potenza}\}$$
-   $$(x, y) \in E ; E^n \iff \{\text{definizione di composizione}\}$$
-   $$\exists z, \, (x, z) \in E \land (z, y) \in E^n \iff \{\text{Ipotesi Induttiva}\}$$
-   $$\exists z, \, (x, z) \in E \land \exists \text{ walk di lunghezza } n \text{ da } z \text{ a } y$$
-   Sia $z = z_0, z_1, \dots, z_n = y$ il walk da $z$ a $y$. Poiche' $(x, z) \in E$, concatenando $x$ otteniamo:
-   $$x = x, z_0, z_1, \dots, z_n = y$$
+   Supponiamo che la proprieta' valga per $n$ e dimostriamola per $n+1$:  
+   $$(x, y) \in E^{n+1} \iff \{\text{definizione di potenza}\}$$  
+   $$(x, y) \in E ; E^n \iff \{\text{definizione di composizione}\}$$  
+   $$\exists z, \, (x, z) \in E \land (z, y) \in E^n \iff \{\text{Ipotesi Induttiva}\}$$  
+   $$\exists z, \, (x, z) \in E \land \exists \text{ walk di lunghezza } n \text{ da } z \text{ a } y$$  
+   Sia $z = z_0, z_1, \dots, z_n = y$ il walk da $z$ a $y$. Poiche' $(x, z) \in E$, concatenando $x$ otteniamo:  
+   $$x = x, z_0, z_1, \dots, z_n = y$$  
    Questo e' un walk di lunghezza $n+1$ da $x$ a $y$.
 
 ---
