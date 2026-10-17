@@ -1,12 +1,15 @@
 ### Punto isolato
-Un punto $x_0 \in A$ si dice **punto isolato** se esiste un intorno $U$ di $x_0$ tale che l'intersezione con l'insieme $A$ contiene solo il punto stesso:
-$$U \cap A = \{x_0\}$$
+Un punto $x_0 \in A$ si dice **punto isolato** se esiste un intorno $U$ di $x_0$ tale che l'intersezione con l'insieme $A$ contiene solo il punto stesso:  
+
+$$U \cap A = \{x_0\}$$  
 
 ### Punto interno e insieme dei punti interni
-Un punto $x_0 \in A$ si dice **punto interno** di $A$ se esiste un intorno $U$ di $x_0$ interamente contenuto in $A$:
-$$U \subseteq A$$
+Un punto $x_0 \in A$ si dice **punto interno** di $A$ se esiste un intorno $U$ di $x_0$ interamente contenuto in $A$:  
 
-L'insieme di tutti i punti interni si indica con $\mathring{A}$ oppure $\text{int}(A)$.
+$$U \subseteq A$$  
+
+L'insieme di tutti i punti interni si indica con $\mathring{A}$ oppure $\text{int}(A)$.  
+
 *Esempio:* Sia l'intervallo $B = (2, 5)$, allora $\mathring{B} = (2, 5)$ perche' ogni punto dell'intervallo ammette un intorno completamente incluso in $B$.
 
 ---
@@ -15,21 +18,25 @@ L'insieme di tutti i punti interni si indica con $\mathring{A}$ oppure $\text{in
 
 Sia $A \subseteq \mathbb{R}$ e $f: A \to \mathbb{R}$  
 
-Un punto $x_0 \in A$ si dice **punto di minimo locale** (o relativo) se esiste un intorno $U$ di $x_0$ tale che:
-$$\forall x \in A \cap U \implies f(x) \ge f(x_0)$$
+Un punto $x_0 \in A$ si dice **punto di minimo locale** (o relativo) se esiste un intorno $U$ di $x_0$ tale che:  
 
-Si dice invece **punto di minimo locale stretto** se la disuguaglianza e' stretta per ogni $x$ diverso da $x_0$:
-$$\forall x \in A \cap U \setminus \{x_0\} \implies f(x) \gt f(x_0)$$
+$$\forall x \in A \cap U \implies f(x) \ge f(x_0)$$  
+
+Si dice invece **punto di minimo locale stretto** se la disuguaglianza e' stretta per ogni $x$ diverso da $x_0$:  
+
+$$\forall x \in A \cap U \setminus \{x_0\} \implies f(x) \gt f(x_0)$$  
 
 > **Osservazione:** Se un punto $x_0$ e' punto di minimo assoluto per la funzione, allora e' anche automaticamente un punto di minimo locale.
 
 ## Punto di massimo locale (o relativo)
 
-Analogamente un punto $x_0 \in A$ si dice **punto di massimo locale** (o relativo) se esiste un intorno $U$ di $x_0$ tale che:
-$$\forall x \in A \cap U \implies f(x) \le f(x_0)$$
+Analogamente un punto $x_0 \in A$ si dice **punto di massimo locale** (o relativo) se esiste un intorno $U$ di $x_0$ tale che:  
 
-Si dice invece **punto di massimo locale stretto** se la disuguaglianza e' stretta per ogni $x$ diverso da $x_0$:
-$$\forall x \in A \cap U \setminus \{x_0\} \implies f(x) \lt f(x_0)$$
+$$\forall x \in A \cap U \implies f(x) \le f(x_0)$$  
+
+Si dice invece **punto di massimo locale stretto** se la disuguaglianza e' stretta per ogni $x$ diverso da $x_0$:  
+
+$$\forall x \in A \cap U \setminus \{x_0\} \implies f(x) \lt f(x_0)$$  
 
 > **Osservazione:** Se un punto $x_0$ e' punto di massimo assoluto per la funzione, allora e' anche automaticamente un punto di massimo locale.
 
@@ -40,10 +47,13 @@ $$\forall x \in A \cap U \setminus \{x_0\} \implies f(x) \lt f(x_0)$$
 Il concetto di limite descrive il comportamento di una funzione quando la variabile indipendente si avvicina a un determinato punto $x_0$.
 
 ### Definizione Generale di Limite
-Sia $A \subseteq \mathbb{R}$, $f: A \to \mathbb{R}$ e $x_0$ un punto di accumulazione per $A$. Si dice che $l \in \overline{\mathbb{R}}$ e' il **limite** di $f$ per $x$ che tende a $x_0$, e si scrive:
-$$\lim_{x \to x_0} f(x) = l$$
-se per ogni intorno $V$ di $l$ esiste un intorno $U$ di $x_0$ tale che:
-$$\forall x \in U \cap A \setminus \{x_0\} \implies f(x) \in V$$
+Sia $A \subseteq \mathbb{R}$, $f: A \to \mathbb{R}$ e $x_0$ un punto di accumulazione per $A$. Si dice che $l \in \overline{\mathbb{R}}$ e' il **limite** di $f$ per $x$ che tende a $x_0$, e si scrive:  
+
+$$\lim_{x \to x_0} f(x) = l$$  
+
+se per ogni intorno $V$ di $l$ esiste un intorno $U$ di $x_0$ tale che:  
+
+$$\forall x \in U \cap A \setminus \{x_0\} \implies f(x) \in V$$  
 
 ### Interpretazione con delta ed epsilon (caso finito)
 Nel caso in cui $x_0 \in \mathbb{R}$ e $l \in \mathbb{R}$ siano numeri reali finiti, gli intorni si esprimono come intervalli:
@@ -87,8 +97,10 @@ $$\lim_{x \to +\infty} \sin x$$
 
 * Supponiamo che esista un limite finito $l \in \mathbb{R}$ per $x \to +\infty$
 * Scegliamo $\varepsilon = \frac{1}{2}$ nella definizione di limite.
-* Dalla definizione di limite, dovrebbe esistere un intorno di $+\infty$ in cui:
-   $$|\sin x - l| < \frac{1}{2} \implies l - \frac{1}{2} < \sin x < l + \frac{1}{2}$$
+* Dalla definizione di limite, dovrebbe esistere un intorno di $+\infty$ in cui:  
+
+   $$|\sin x - l| < \frac{1}{2} \implies l - \frac{1}{2} < \sin x < l + \frac{1}{2}$$  
+
 * Questo implica che per valori di $x$ sufficientemente grandi la funzione $\sin x$ dovrebbe rimanere confinata all'interno di un intervallo di ampiezza pari a $1$.
 * Tuttavia, la funzione $\sin x$ oscilla periodicamente tra $-1$ e $1$, coprendo un'ampiezza totale pari a $2$.
 * Risulta quindi impossibile contenere tutte le oscillazioni di ampiezza $2$ in una striscia di ampiezza $1$.
