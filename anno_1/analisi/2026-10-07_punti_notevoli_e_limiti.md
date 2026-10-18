@@ -110,10 +110,14 @@ $$\lim_{x \to +\infty} \sin x$$
 Sia $A \subseteq \mathbb{R}, f: A \to \mathbb{R}$ e $x_0 \in \text{Acc}(A)$. Se esiste il limite $\lim_{x \to x_0} f(x) = l \in \overline{\mathbb{R}}$ con $l \neq 0$, allora esiste un intorno $U$ di $x_0$ tale che per ogni $x \in U \cap A \setminus \{x_0\}$, la funzione $f(x)$ ha lo stesso segno di $l$.
 
 ## Teorema di confronto
-Siano $f, g: A \to \mathbb{R}$ tali che $f(x) \le g(x)$ in un intorno di $x_0$ (escluso). Se esistono i rispettivi limiti:
-$$\lim_{x \to x_0} f(x) = l_1, \quad \lim_{x \to x_0} g(x) = l_2$$
-allora si ha:
-$$l_1 \le l_2$$
+Siano $f, g: A \to \mathbb{R}$ tali che $f(x) \le g(x)$ in un intorno di $x_0$ (escluso). Se esistono i rispettivi limiti:  
+
+$$\lim_{x \to x_0} f(x) = l_1, \quad \lim_{x \to x_0} g(x) = l_2$$  
+
+allora si ha:  
+
+$$l_1 \le l_2$$  
+
 > **Nota bene:** Il teorema non si estende alle disuguaglianze strette. Anche se $f(x) < g(x)$ rigorosamente (come $f(x) = -\frac{1}{x}$ e $g(x) = \frac{1}{x}$), al limite si puo' avere comunque l'uguaglianza ($l_1 \le l_2$) ovvero, il limite indebolisce la disuguaglianza stretta!
 
 ---
