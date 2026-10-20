@@ -16,7 +16,7 @@ Il tipo base `char` permette di rappresentare caratteri singoli codificati secon
 T_b ::= ... // i tipi gia' conosciuti e.g. INT, BOOL
         | CHAR
 V ::= ...
-        | c  // dove $c$ e' un carattere da tastiera tra apici o una sequenza di escape
+        | c  // dove c e' un carattere da tastiera tra apici o una sequenza di escape
 ```
 
 #### Confronto tra Caratteri
@@ -110,8 +110,8 @@ s, t := t, s;
 
 | Ambiente | Memoria |
 | :--- | :--- |
-| `s` $\to L_s$ | $L_s \to L_b$ *(ora s punta al blocco $L_b$)* |
-| `t` $\to L_t$ | $L_t \to L_a$ *(ora t punta al blocco $L_a$)* |
+| `s` $\to L_s$ | $L_s \to L_b$ (ora s punta al blocco $L_b$) |
+| `t` $\to L_t$ | $L_t \to L_a$ (ora t punta al blocco $L_a$) |
 | |...|
 ---
 
