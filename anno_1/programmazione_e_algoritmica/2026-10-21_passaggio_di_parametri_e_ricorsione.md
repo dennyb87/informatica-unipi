@@ -13,16 +13,11 @@ Nel passaggio per riferimento, la funzione opera **direttamente sui parametri at
 
 **Esempio di Aliasing ed effetto collaterale:**
 
-```mermaid
-graph LR
-    subgraph Ambiente
-        c --> l2
-        a --> l2
-    end
-    subgraph Memoria
-        l2 --> 3
-    end
-```
+| Ambiente | Memoria |
+| :--- | :--- |
+| `c` $\to l_1$ | $l_1 \to 3$ |
+| `a` $\to l_1$ | |
+
 
 In questo caso, sia la variabile `c` che il parametro `a` puntano alla stessa locazione di memoria $l_2$, quindi modificare `a` modifica direttamente il valore associato a `c`.
 
