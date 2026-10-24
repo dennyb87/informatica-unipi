@@ -65,13 +65,16 @@ estrai(b, 0);
 
 La sintassi astratta per la dichiarazione di una funzione e' espressa come:
 
-$$C ::= \dots \mid T \text{ Id}(D_s) \, E$$
+```c
+C ::= ...
+    | T Id(D_s) E
+```
 
 Dove:
-* $T$: e' il **tipo di ritorno** della funzione.
-* $\text{Id}$: e' il **nome della funzione**.
-* $D_s$: e' la **lista dei parametri formali** ($D_s = T_1 \text{Id}_1, T_2 \text{Id}_2, \dots$).
-* $E$: e' il **blocco di codice/espressione** ritornato, tipicamente nella forma $\{ C; \text{return } E; \}$.
+* $T$: e' il **tipo di ritorno** della funzione
+* $\text{Id}$: e' il **nome della funzione**
+* $D_s$: e' la **lista dei parametri formali** ($D_s = T_1 \text{Id}_1, T_2 \text{Id}_2, \dots$)
+* $E$: e' il **blocco di codice/espressione** ritornato, tipicamente nella forma $\{ C; \text{return } E; \}$
 
 ## Esempio: Clonazione di un Array
 
