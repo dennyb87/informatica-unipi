@@ -10,7 +10,7 @@
 Dato un grafo non orientato $G = (V, E)$, e' possibile definire il grafo orientato associato $\tilde{G} = (V, \tilde{E})$.
 
 ```mermaid
-graph TD
+graph LR
     subgraph "Grafo Non Orientato G"
         0 --- 1
         1 --- 2
@@ -22,7 +22,7 @@ graph TD
 ### Grafo orientato associato
 
 ```mermaid
-graph TD
+graph LR
     subgraph "Grafo Orientato Associato G<sup>~</sup>"
         0_a((0)) --> 1_a((1))
         1_a((1)) --> 0_a((0))
