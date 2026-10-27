@@ -40,8 +40,10 @@ graph TD
 
 ### Relazioni di ordinamento
 
-Una relazione $R$ si dice di **ordinamento totale** se e' un ordinamento parziale che soddisfa anche la **proprietà di totalita**:
-$$\forall a, b \in A, \quad (a, b) \in R \lor (b, a) \in R$$
+Una relazione $R$ si dice di **ordinamento totale** se e' un ordinamento parziale che soddisfa anche la **proprietà di totalita**:  
+
+$$\forall a, b \in A, \quad (a, b) \in R \lor (b, a) \in R$$  
+
 Ovvero, ogni coppia di elementi e' sempre confrontabile. Ad esempio, $\le$ su $\mathbb{N}$ e' un ordinamento totale, mentre l'inclusione $\subseteq$ su $\mathcal{P}(A)$ **non** lo e'.
 
 ---
@@ -53,15 +55,23 @@ Consideriamo l'istruzione di ciclo:
 while (x >= 2) do { x := x - 2 }
 ```
 Possiamo modellare le componenti del ciclo come relazioni insiemistiche:
-* **Guardia ($G$)**: Condizione di permanenza nel ciclo.
-  $$G = \{(n, n) \in \mathbb{Z} \times \mathbb{Z} \mid n \ge 2\}$$
+* **Guardia ($G$)**: Condizione di permanenza nel ciclo.  
+
+  $$G = \{(n, n) \in \mathbb{Z} \times \mathbb{Z} \mid n \ge 2\}$$  
+
   > Si usa la coppia $(n, n)$ perche' nel contesto della semantica relazionale, qualsiasi componente di un programma viene visto come una relazione ingresso-uscita.
-* **Negazione della Guardia ($\tilde{G}$)**: Condizione di uscita dal ciclo.
-  $$\tilde{G} = Id_\mathbb{Z} \setminus G = \{(n, n) \in \mathbb{Z} \times \mathbb{Z} \mid n < 2\}$$
-* **Corpo del ciclo ($C$)**: Trasformazione dello stato.
-  $$C = \{(x, x - 2) \mid x \in \mathbb{Z}\}$$
-* **Rappresentazione globale del ciclo ($W$)**:
-  $$W = (G; C)^* ; \tilde{G} : \mathbb{Z} \to \mathbb{Z}$$
+* **Negazione della Guardia ($\tilde{G}$)**: Condizione di uscita dal ciclo.  
+
+  $$\tilde{G} = Id_\mathbb{Z} \setminus G = \{(n, n) \in \mathbb{Z} \times \mathbb{Z} \mid n < 2\}$$  
+
+* **Corpo del ciclo ($C$)**: Trasformazione dello stato.  
+
+  $$C = \{(x, x - 2) \mid x \in \mathbb{Z}\}$$  
+
+* **Rappresentazione globale del ciclo ($W$)**:  
+
+  $$W = (G; C)^* ; \tilde{G} : \mathbb{Z} \to \mathbb{Z}$$  
+
   > Dove $(G; C)^*$ rappresenta la chiusura riflessiva-transitiva del corpo.
 
 
@@ -113,12 +123,12 @@ graph TD
 
 Dati due nodi $x, y \in V$:
 * Sono **adiacenti** se $(x, y) \in E$ oppure $(y, x) \in E$.
-* **Vicinato in uscita** $N^+(x)$: l'insieme dei nodi raggiungibili da $x$.
-  $$N^+(x) = \{y \in V \mid (x, y) \in E\}$$
-* **Vicinato in ingresso** ($N^-(x)$): l'insieme dei nodi da cui e' raggiungibile $x$.
-  $$N^-(x) = \{y \in V \mid (y, x) \in E\}$$
-* **Grado di uscita ($d^+_x$) e in ingresso ($d^-_x$)**: ovvero la cardinalita' dei vicinati.
-  $$d^+_x = |N^+(x)|, \quad d^-_x = |N^-(x)|$$
+* **Vicinato in uscita** $N^+(x)$: l'insieme dei nodi raggiungibili da $x$.  
+  $$N^+(x) = \{y \in V \mid (x, y) \in E\}$$  
+* **Vicinato in ingresso** ($N^-(x)$): l'insieme dei nodi da cui e' raggiungibile $x$.  
+  $$N^-(x) = \{y \in V \mid (y, x) \in E\}$$  
+* **Grado di uscita ($d^+_x$) e in ingresso ($d^-_x$)**: ovvero la cardinalita' dei vicinati.  
+  $$d^+_x = |N^+(x)|, \quad d^-_x = |N^-(x)|$$  
 
 
 Dall'esempio nel diagramma di Hasse si ha allora che:  
@@ -142,26 +152,31 @@ Le proprieta' TUSI diventano condizioni sui gradi.
 
 ## Handshaking Lemma
 
-Per ogni grafo orientato vale la relazione fondamentale tra i gradi dei nodi e il numero di archi:
-$$\sum_{x \in V} d^-_x = \sum_{x \in V} d^+_x = |E| = m$$
+Per ogni grafo orientato vale la relazione fondamentale tra i gradi dei nodi e il numero di archi:  
+
+$$\sum_{x \in V} d^-_x = \sum_{x \in V} d^+_x = |E| = m$$  
+
 *Significato:* La somma di tutti i gradi in ingresso (o in uscita) di un grafo  esattamente uguale al numero totale degli archi.
 
 ### Dimostrazione per Induzione
 
-* **Caso Base (C.B.):** Se $E = \emptyset$ (o $n = \emptyset$), allora $d^+_x = 0$ per ogni $x \in V$, da cui:
-  $$\sum_{x \in V} d^+_x = 0$$
+* **Caso Base (C.B.):** Se $E = \emptyset$ (o $n = \emptyset$), allora $d^+_x = 0$ per ogni $x \in V$, da cui:  
+  $$\sum_{x \in V} d^+_x = 0$$  
 
-* **Passo Induttivo:** Supponiamo che per $|E| = m$ valga la proprietà $\sum_{x \in V} d^+_x = |E| = m$ per ogni grafo $G = (V, E)$. Vogliamo dimostrare che per un grafo $G' = (V', E')$ con $|E'| = m + 1$ vale:
-  $$\sum_{x \in V'} d'^+_x = |E'| = m + 1$$
+* **Passo Induttivo:** Supponiamo che per $|E| = m$ valga la proprietà $\sum_{x \in V} d^+_x = |E| = m$ per ogni grafo $G = (V, E)$. Vogliamo dimostrare che per un grafo $G' = (V', E')$ con $|E'| = m + 1$ vale:  
+
+  $$\sum_{x \in V'} d'^+_x = |E'| = m + 1$$  
 
 * **Svolgimento:** 
   Sia $G' = (V', E')$ con $|E'| = m + 1$. Togliamo da $G'$ un arco $v$ (o $e = (z \to k)$), ottenendo il grafo $G'' = (V', E' \setminus \{v\})$. Il grafo $G''$ ha esattamente $m$ archi ($|E''| = m$). 
   
-  Quindi, per ipotesi induttiva, sappiamo che:
-  $$\sum_{x \in V} d''^+_x = |E''| = m$$
+  Quindi, per ipotesi induttiva, sappiamo che:  
+
+  $$\sum_{x \in V} d''^+_x = |E''| = m$$  
   
-  Rimettendo l'arco rimosso per passare da $G''$ a $G'$:
-  $$\sum_{x \in V'} d'^+_x = \sum_{x \in V' \setminus \{z\}} d''^+_x + d''^+_z + 1 = m + 1$$
+  Rimettendo l'arco rimosso per passare da $G''$ a $G'$:  
+
+  $$\sum_{x \in V'} d'^+_x = \sum_{x \in V' \setminus \{z\}} d''^+_x + d''^+_z + 1 = m + 1$$  
 
 
 ---
@@ -203,8 +218,10 @@ $N^-(3) = \{1, 5\}$
 ---
 
 ## Grafi Etichettati e **Pesati**
-Spesso e' utile associare a nodi o archi informazioni aggiuntive (es. distanze stradali, costi o tipologie di utenti). Formalmente si definisce una funzione di etichettatura:
-$$L : (V \cup E) \to D$$
+Spesso e' utile associare a nodi o archi informazioni aggiuntive (es. distanze stradali, costi o tipologie di utenti). Formalmente si definisce una funzione di etichettatura:  
+
+$$L : (V \cup E) \to D$$  
+
 dove $D$ e' l'insieme dei pesi o delle etichette.
 
 ## Walk, trail e path
