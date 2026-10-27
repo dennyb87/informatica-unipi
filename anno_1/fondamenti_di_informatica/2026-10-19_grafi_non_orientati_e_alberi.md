@@ -39,7 +39,7 @@ L'insieme degli archi orientati $\tilde{E}$ e' definito come:
 
 $$\tilde{E} = \{ (x, y) \in V \times V \mid \{x, y\} \in E \}$$
 
-*(Nota: $\{x, y\}$ indica un insieme di due elementi, quindi un arco non orientato, mentre $(x, y)$ e' una coppia ordinata).*
+>**Nota**: $\{x, y\}$ indica un insieme di due elementi, quindi un arco non orientato, mentre $(x, y)$ e' una coppia ordinata.
 
 #### Cardinalita'
 Per ogni arco del grafo non orientato ne otteniamo $2$ nel grafo orientato associato:
