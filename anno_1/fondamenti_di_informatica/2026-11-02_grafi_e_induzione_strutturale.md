@@ -171,13 +171,13 @@ Funzione $\text{sumlist} : L_{\mathbb{N}} \to \mathbb{N}$
 1. $\text{sumlist}([\:]) = 0$
 2. $\text{sumlist}(n : \text{lst}) = \text{sumlist}(\text{lst}) + n$
 
-## Apparteneza di un elemento a una lista
+## Appartenenza di un elemento a una lista `belList` (*belong to list*)
 
-Funzione $\text{inlist} : L_A \times A \to \text{Bool}$
+Funzione $\text{belList} : L_A \times A \to \text{Bool}$
 
-1. $\text{inlist}([\:], b) = \text{false}, \quad \forall b \in A$
-2. $\text{inlist}(a : \text{lst}, b) = \text{true}, \quad \forall a, b \in A \text{ tali che } a = b$
-3. $\text{inlist}(a : \text{lst}, b) = \text{inlist}(\text{lst}, b), \quad \forall a, b \in A \text{ tali che } a \neq b$
+1. $\text{belList}([\:], b) = \text{false}, \quad \forall b \in A$
+2. $\text{belList}(a : \text{lst}, b) = \text{true}, \quad \forall a, b \in A \text{ tali che } a = b$
+3. $\text{belList}(a : \text{lst}, b) = \text{belList}(\text{lst}, b), \quad \forall a, b \in A \text{ tali che } a \neq b$
 
 ## Principio di induzione sulle liste
 
