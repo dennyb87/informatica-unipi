@@ -122,7 +122,7 @@ Sono sufficienti **e necessari** $n-1$ confronti, quindi e' un **algoritmo ottim
 - **Input:** Array `a` di interi non ordinato, valore chiave `v`.
 - **Output:** Posizione di `v` in `a` se presente, `-1` se non e' presente.
 
-```java
+```c
 int ricercaS(int[] a, int v) {
     int pos = -1;
     int i = 0;

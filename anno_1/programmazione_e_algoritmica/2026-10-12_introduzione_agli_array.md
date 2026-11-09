@@ -11,7 +11,7 @@ Gli **array** sono strutture dati fondamentali utilizzate per trattare **dati om
 
 Esempio di dichiarazione di un array di interi:
 
-```java
+```c
 int[] voti = [18, 30, 23];
 ```
 

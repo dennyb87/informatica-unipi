@@ -10,7 +10,7 @@ Ad ogni passo si confronta la chiave $v$ con l'elemento centrale dell'array $a[c
 
 ### Versione iterativa
 
-```java
+```c
 int ricercaBinaria(int[] a, int v) {
     // a deve essere gia' ordinato
     int sx = 0;
@@ -52,7 +52,7 @@ $$\frac{n}{2^i} \approx 1 \implies 2^i \approx n \implies i \approx \log_2 n$$
 
 La prima chiamata per avviare la ricerca sara': `ricercaBinariaRic(a, v, 0, a.length - 1)`.
 
-```java
+```c
 int ricercaBinariaRic(int[] a, int v, int sx, int dx) {
     if (sx > dx) {
         return -1;
