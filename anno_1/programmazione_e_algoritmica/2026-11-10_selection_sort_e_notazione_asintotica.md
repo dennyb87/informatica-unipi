@@ -188,6 +188,8 @@ $$f(n) \in o(g(n)) \iff \lim_{n \to +\infty} \frac{f(n)}{g(n)} = 0$$
 
 $f(n)$ cresce **strettamente piu' lentamente** di $g(n)$.
 
+> Nota: Se O-grande corrisponde a $\le$ (minore o uguale) ovvero, $f(n)$ puo' crescere alla stessa velocita' (a meno di costanti) oppure anche piu' lentamentemente di $g(n)$, o-piccolo corrisponde a $\lt$, ovvero $f(n)$ cresce strettamente piu' lentamente di $g(n)$.
+
 #### Notazione omega-piccolo ($\omega$)  
 
 $$f(n) \in \omega(g(n)) \iff \lim_{n \to +\infty} \frac{f(n)}{g(n)} = +\infty$$  
@@ -214,8 +216,12 @@ $f(n)$ cresce **strettamente piu' velocemente** di $g(n)$.
   * $f(n) \in \Omega(f(n))$
   * $f(n) \in \Theta(f(n))$
 
+> **Nota:** Non vale per o-piccolo ne' omega-piccolo.
+
 * **Simmetria:**
   * $f(n) \in \Theta(g(n)) \iff g(n) \in \Theta(f(n))$
+
+> **Nota:** Se $f(n)$ e' racchiusa tra $c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n)$, dividendo per le costanti otteniamo che anche $g(n)$ e' racchiusa tra i multipli inversi di $f(n)$ cioe' $\frac{1}{c_2} \cdot f(n) \le g(n) \le \frac{1}{c_1} \cdot f(n)$. Invertendo la prospettiva, le due funzioni crescono allo stesso ritmo e si scambiano simmetricamente di ruolo.  
 
 * **Simmetria trasposta:**
   * $f(n) \in O(g(n)) \iff g(n) \in \Omega(f(n))$
