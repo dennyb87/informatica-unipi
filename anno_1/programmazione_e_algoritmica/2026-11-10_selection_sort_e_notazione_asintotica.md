@@ -120,6 +120,8 @@ La notazione asintotica (introdotta formalmente in informatica da Donald Knuth n
 
 ### Notazione O-grande
 
+<img src="./assets/o-grande.jpg" width="300px" />
+
 La notazione $O$ specifica un **limite superiore asintotico** per il tasso di crescita di una funzione.  
 
 $$O(g(n)) = \{ f(n) : \exists \, c > 0, n_0 > 0 \text{ t.c. } \forall n \ge n_0, \, 0 \le f(n) \le c \cdot g(n) \}$$  
@@ -136,6 +138,8 @@ Se $f(n) \in O(g(n))$, diciamo che $f(n)$ cresce al piu' come $g(n)$, a meno di 
 ---
 
 ### Notazione omega-grande
+
+<img src="./assets/omega-grande.jpg" width="300px" />
 
 La notazione $\Omega$ specifica un **limite inferiore asintotico** per il tasso di crescita di una funzione.  
 
