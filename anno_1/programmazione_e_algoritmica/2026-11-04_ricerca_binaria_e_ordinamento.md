@@ -175,7 +175,7 @@ $$C_{\text{pessimo}}(n) = \sum_{j=1}^{n-1} j = \frac{(n-1) \cdot n}{2} = \frac{n
 
 Notare che $\frac{n(n-1)}{2} = \binom{n}{2}$, ossia il numero di coppie non ordinate presenti in un array di $n$ elementi.
 
-Il tempo cresce in modo **quadratico**: $T_{\text{pessimo}}(n) = n^2$.
+Il tempo cresce in modo **quadratico**: $T_{\text{pessimo}}(n) = \binom{n}{2} \simeq n^2$.
 
 ---
 
@@ -186,4 +186,4 @@ Nel caso medio, per ciascun elemento $a[j]$, ci si aspetta che esso sia piu' pic
 
 $$C_{\text{medio}}(n) = \sum_{j=1}^{n-1} \frac{j}{2} = \frac{1}{2} \sum_{j=1}^{n-1} j = \frac{1}{2} \binom{n}{2} = \frac{n^2 - n}{4}$$  
 
-Il tempo di esecuzione rimane quindi nell'ordine di complessita' **quadratica**: $T_{\text{medio}}(n) = n^2$.
+Il tempo di esecuzione rimane quindi nell'ordine di complessita' **quadratica**: $T_{\text{medio}}(n) \simeq \frac{1}{2} \binom{n}{2} \simeq \frac{1}{2}n^2$.
