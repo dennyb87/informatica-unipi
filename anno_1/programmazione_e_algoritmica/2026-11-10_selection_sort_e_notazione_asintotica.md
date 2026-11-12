@@ -279,4 +279,4 @@ $$n \log n, \quad n, \quad \log^2 n, \quad n \log^2 n, \quad 2^n, \quad 3^n, \qu
 
 #### Soluzione ordinata:  
 
-$$2 \;\prec\; \log \log n \;\prec\; \log n \;\prec\; \log^2 n \;\prec\; \sqrt{n} \;\prec\; n \;\prec\; n \log n \;\prec\; n \log^2 n \;\prec\; n^2 \;\prec\; 2^n \;\prec\; 3^n$$  
+$$2 \prec \log \log n \prec \log n \prec \log^2 n \prec \sqrt{n} \prec n \prec n \log n \prec n \log^2 n \prec n^2 \prec 2^n \prec 3^n$$  
