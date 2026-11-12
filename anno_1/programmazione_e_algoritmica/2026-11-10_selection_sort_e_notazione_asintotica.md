@@ -159,6 +159,8 @@ Se $f(n) \in \Omega(g(n))$, diciamo che $f(n)$ cresce almeno come $g(n)$, a meno
 
 ### Notazione theta
 
+<img src="./assets/theta-grande.jpg" width="300px" />
+
 La notazione $\Theta$ definisce un **limite asintotico stretto** (sia superiore che inferiore).  
 
 $$\Theta(g(n)) = \{ f(n) : \exists \, c_1 > 0, c_2 > 0, n_0 > 0 \text{ t.c. } \forall n \ge n_0, \, 0 \le c_1 \cdot g(n) \le f(n) \le c_2 \cdot g(n) \}$$  
