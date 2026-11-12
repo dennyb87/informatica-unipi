@@ -99,13 +99,18 @@ Il numero di confronti $C(n) = \binom{n}{2}$ cresce quadraticamente come $n^2$. 
 
 ## Confronto tra algoritmi di ordinamento
 
-| Parametro | Insertion Sort (Caso ottimo) | Insertion Sort (Caso medio) | Insertion Sort (Caso pessimo) | Selection Sort (Tutti i casi) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Numero di confronti** | $n - 1$ | $\frac{1}{2} \binom{n}{2}$ | $\binom{n}{2}$ | $\binom{n}{2}$ |
-| **Tasso di crescita tempo $T(n)$** | $n$ | $n^2$ | $n^2$ | $n^2$ |
-| **Costo in spazio** | $O(1)$ (In loco) | $O(1)$ (In loco) | $O(1)$ (In loco) | $O(1)$ (In loco) |
+| # Confronti | Caso ottimo | Caso medio | Caso pessimo |
+| :--- | :--- | :--- | :--- |
+| **Insertion Sort** | $n - 1$ | $\frac{1}{2}\binom{n}{2}$ | $\binom{n}{2}$ |
+| **Selection Sort** | $\binom{n}{2}$ | $\binom{n}{2}$ | $\binom{n}{2}$ |
 
-> entrambi gli algoritmi sono **in loco** (in-place), ovvero utilizzano una quantita' di memoria ausiliaria costante $O(1)$. Tuttavia, Selection Sort esegue sempre lo stesso numero di confronti a prescindere dall'ordinamento iniziale dell'input, mentre Insertion Sort e' piu efficiente su input gia' parzialmente ordinati.
+---
+
+| Costo in tempo <br> Tasso di crescita | Caso ottimo | Caso medio | Caso pessimo |
+| :--- | :--- | :--- | :--- |
+| **Insertion Sort** | $n$ | $n^2$ | $n^2$ |
+| **Selection Sort** | $n^2$ | $n^2$ | $n^2$ |
+> **Nota:** Entrambi gli algoritmi utilizzano una quantita' di memoria ausiliaria costante $O(1)$ (*in loco* o *in-place*). Tuttavia, Selection Sort esegue sempre lo stesso numero di confronti a prescindere dall'ordinamento iniziale dell'input, mentre Insertion Sort e' piu efficiente su input gia' parzialmente ordinati.
 
 ---
 
