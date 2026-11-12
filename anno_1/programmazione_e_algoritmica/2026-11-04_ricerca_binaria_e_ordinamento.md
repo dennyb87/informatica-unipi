@@ -74,7 +74,7 @@ Per la versione ricorsiva vale la relazione di ricorrenza:
 
 $$C(n) \le 1 + C\left(\frac{n}{2}\right)$$  
 
-> Il `+1` rappresenta il singolo confronto eseguito nel passo corrente prima di effettuare la chiamata ricorsiva.
+> Il `+1` rappresenta il singolo confronto eseguito nel passo corrente prima di effettuare la chiamata ricorsiva.  
 
 $$T(n) \le \text{cost} \cdot \log_2 n$$  
 $$T(n) \sim \log_2 n$$  
@@ -157,9 +157,9 @@ Il tempo di esecuzione dipende dal numero di confronti effettuati dalla guardia 
 ### 1. Caso ottimo
 Il caso ottimo si verifica quando l'array e' **gia' ordinato**.
 * Ad ogni passo $j$, il test `key < a[i]` risulta subito `false`
-* Viene effettuato solo **1 confronto** per ciascun passo $j$.
+* Viene effettuato solo **1 confronto** per ciascun passo $j$.  
 
-$$C_{\text{ottimo}}(n) = \sum_{j=1}^{n-1} 1 = n - 1$$
+$$C_{\text{ottimo}}(n) = \sum_{j=1}^{n-1} 1 = n - 1$$  
 
 Il tempo $T_{\text{ottimo}}(n)$ cresce come $C_{\text{ottimo}}(n)$ quindi e' lineare.
 
@@ -169,9 +169,9 @@ Il tempo $T_{\text{ottimo}}(n)$ cresce come $C_{\text{ottimo}}(n)$ quindi e' lin
 Il caso pessimo si verifica quando l'array e' ordinato in **ordine inverso**.
 * Ad ogni passo $j$, l'elemento $key$ e' piu' piccolo di tutti quelli che lo precedono.
 * La guardia del ciclo `while` e' sempre vera finche' $i$ non diventa $< 0$.
-* Per ogni passo $j$ si eseguono esattamente $j$ confronti.
+* Per ogni passo $j$ si eseguono esattamente $j$ confronti.  
 
-$$C_{\text{pessimo}}(n) = \sum_{j=1}^{n-1} j = \frac{(n-1) \cdot n}{2} = \frac{n^2 - n}{2}$$
+$$C_{\text{pessimo}}(n) = \sum_{j=1}^{n-1} j = \frac{(n-1) \cdot n}{2} = \frac{n^2 - n}{2}$$  
 
 Notare che $\frac{n(n-1)}{2} = \binom{n}{2}$, ossia il numero di coppie non ordinate presenti in un array di $n$ elementi.
 
@@ -182,8 +182,8 @@ Il tempo cresce in modo **quadratico**: $T_{\text{pessimo}}(n) = n^2$.
 ### 3. Caso medio
 Nel caso medio, per ciascun elemento $a[j]$, ci si aspetta che esso sia piu' piccolo di circa la meta' degli elementi che lo precedono.
 
-* Ad ogni passo $j$ si effettuano circa $\frac{j}{2}$ iterazioni e confronti.
+* Ad ogni passo $j$ si effettuano circa $\frac{j}{2}$ iterazioni e confronti.  
 
-$$C_{\text{medio}}(n) = \sum_{j=1}^{n-1} \frac{j}{2} = \frac{1}{2} \sum_{j=1}^{n-1} j = \frac{1}{2} \binom{n}{2} = \frac{n^2 - n}{4}$$
+$$C_{\text{medio}}(n) = \sum_{j=1}^{n-1} \frac{j}{2} = \frac{1}{2} \sum_{j=1}^{n-1} j = \frac{1}{2} \binom{n}{2} = \frac{n^2 - n}{4}$$  
 
 Il tempo di esecuzione rimane quindi nell'ordine di complessita' **quadratica**: $T_{\text{medio}}(n) = n^2$.
