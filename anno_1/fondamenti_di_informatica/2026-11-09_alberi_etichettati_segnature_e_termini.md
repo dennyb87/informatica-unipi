@@ -60,21 +60,17 @@ graph TD
     R5_R --- R5_R_R(( ))
 ```
 
-La visita simmetrica produce la lista di elementi:
+La visita simmetrica produce la lista di elementi:  
 
-$$
-[5, 3, 8, 7, 5, 12, 4]
-$$
+$$[5, 3, 8, 7, 5, 12, 4]$$  
 
 # Trasformazione e calcolo sugli alberi
 
 ### Mappatura della lunghezza delle etichette (lengthBT)
 
-La funzione $lengthBT$ trasforma un albero di stringhe $BT_{A^*}$ in un albero di interi $BT_{\mathbb{N}}$, sostituendo ogni etichetta con la propria lunghezza:
+La funzione $lengthBT$ trasforma un albero di stringhe $BT_{A^*}$ in un albero di interi $BT_{\mathbb{N}}$, sostituendo ogni etichetta con la propria lunghezza:  
 
-$$
-lengthBT : BT_{A^*} \to BT_{\mathbb{N}}
-$$
+$$lengthBT : BT_{A^*} \to BT_{\mathbb{N}}$$  
 
 $$
 \begin{aligned}
@@ -85,11 +81,9 @@ $$
 
 ### Somma dei nodi (sumBT)
 
-La funzione $sumBT$ calcola la somma intera di tutti i valori memorizzati nei nodi dell'albero:
+La funzione $sumBT$ calcola la somma intera di tutti i valori memorizzati nei nodi dell'albero:  
 
-$$
-sumBT : BT_{\mathbb{N}} \to \mathbb{N}
-$$
+$$sumBT : BT_{\mathbb{N}} \to \mathbb{N}$$  
 
 $$
 \begin{aligned}
@@ -105,7 +99,7 @@ Sia $P$ una proprieta' definita sugli alberi binari etichettati, $P : BT_A \to \
 - **Caso Base (CB):** Si dimostra che $P(\lambda)$ e' vera.
 - **Passo Induttivo (PI):** Assumendo che $P(t_1)$ e $P(t_2)$ siano vere (ipotesi induttiva), si dimostra che $P(N(t_1, a, t_2))$ e' vera per qualsiasi $a \in A$.
 
-### Esempio di proprieta'
+### Esempio di proprieta'  
 
 $$belList(visit(t), b) = belBT(t, b)$$  
 
@@ -136,16 +130,14 @@ graph TD
 
 Sia $T$ un albero binario:
 
-- **Caso Base:**
-  $$GRAFO(\lambda) = (\emptyset, \emptyset)$$
+- **Caso Base:**  
+  $$GRAFO(\lambda) = (\emptyset, \emptyset)$$  
 
 - **Caso Induttivo:**
 
-  Siano $grafo(t_1) = (V_1, E_1), \quad grafo(t_2) = (V_2, E_2)$. Il nuovo grafo $grafo(N(t_1, t_2)) = (V, E)$ e' definito come:
+  Siano $grafo(t_1) = (V_1, E_1), \quad grafo(t_2) = (V_2, E_2)$. Il nuovo grafo $grafo(N(t_1, t_2)) = (V, E)$ e' definito come:  
 
-  $$
-  V = \{0w \mid w \in V_1\} \cup \{1w \mid w \in V_2\} \cup \{\epsilon\}
-  $$
+  $$V = \{0w \mid w \in V_1\} \cup \{1w \mid w \in V_2\} \cup \{\epsilon\}$$  
 
   $$
   \begin{aligned}
@@ -218,9 +210,9 @@ Consideriamo la segnatura $\mathcal{F}$ definita come:
 
 ## Rappresentazione grafica di termini
 
-I termini possono essere visualizzati intuitivamente come **alberi ordinati etichettati**, con etichette prese dalla segnatura $\mathcal{F}$. La regola strutturale e' semplice: se un nodo ha un'etichetta appartenente a $\mathcal{F}_n$, allora avra' esattamente $n$ figli (le foglie sono quindi le costanti in $\mathcal{F}_0$).
+I termini possono essere visualizzati intuitivamente come **alberi ordinati etichettati**, con etichette prese dalla segnatura $\mathcal{F}$. La regola strutturale e' semplice: se un nodo ha un'etichetta appartenente a $\mathcal{F}_n$, allora avra' esattamente $n$ figli dove le foglie sono le costanti in $\mathcal{F}_0$.
 
-Riprendendo l'esempio precedente ($\mathcal{F}_0 = \{a, b\}$, $\mathcal{F}_1 = \{f\}$, $\mathcal{F}_2 = \{g\}$), ecco la rappresentazione ad albero di alcuni termini:
+Riprendendo l'esempio precedente $\mathcal{F}_0 = \{a, b\}$, $\mathcal{F}_1 = \{f\}$, $\mathcal{F}_2 = \{g\}$, ecco la rappresentazione ad albero di alcuni termini:
 
 ```mermaid
 graph TD
@@ -323,7 +315,8 @@ Definiamo la funzione $add: \mathcal{N}Term \times \mathcal{N}Term \to \mathcal{
 1. $add(x, Z) = x$ *(Clausola base)*
 2. $add(x, S(y)) = S(add(x, y))$ *(Clausola induttiva)*
 
-**Esempio di calcolo per $3 + 2$, ovvero $add(S(S(S(Z))), S(S(Z)))$:**
+**Esempio di calcolo per $3 + 2$, ovvero $add(S(S(S(Z))), S(S(Z)))$:**  
+
 $$
 \begin{aligned}
 add(S(S(S(Z))), S(S(Z))) &= S(add(S(S(S(Z))), S(Z))) && \text{(Clausola induttiva)} \\
