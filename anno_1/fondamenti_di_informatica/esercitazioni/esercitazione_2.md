@@ -40,8 +40,8 @@ Per ognuno dei seguenti enunciati dire se e' vero (fornendo una dimostrazione) o
 - **Risposta**: **Falso**
 - **Spiegazione / Controesempio**: Aggiungendo l'identita' $\text{Id}_V$ si garantisce la riflessivita' e l'assenza di cicli garantisce l'antisimmetria, ma la relazione **non e' necessariamente transitiva** e.g. per il grafo $1 \to 2 \to 3$ non esiste la coppia $(1, 3) \in E$.
 
-**(c) Per tutti i DAG $G = (V, E)$, $E^* \in \text{Rel}(V, V)$ e' un ordinamento parziale.**
+**(c) Per tutti i DAG $G = (V, E)$, $E^\ast \in \text{Rel}(V, V)$ e' un ordinamento parziale.**
 - **Risposta**: **Vero**
 - **Dimostrazione**:
-  - $E^*$ e' la **chiusura riflessiva e transitiva** di $E$, quindi per definizione soddisfa la proprieta; **riflessiva** e la proprieta' **transitiva**.
-  - **Antisimmetria**: Se $(x, y) \in E^*$ e $(y, x) \in E^*$ significa che posso andare da $x$ a $y$ e da $y$ a $x$ in $G$, ma se $x \neq y$ allora avremmo un ciclo e $G$ non sarebbe un DAG (assurdo). Allora deve valere $x = y$ soddisfacendo l'antisimmetria.
+  - $E^\ast$ e' la **chiusura riflessiva e transitiva** di $E$, quindi per definizione soddisfa la proprieta; **riflessiva** e la proprieta' **transitiva**.
+  - **Antisimmetria**: Se $(x, y) \in E^\ast$ e $(y, x) \in E^\ast$ significa che posso andare da $x$ a $y$ e da $y$ a $x$ in $G$, ma se $x \neq y$ allora avremmo un ciclo e $G$ non sarebbe un DAG (assurdo). Allora deve valere $x = y$ soddisfacendo l'antisimmetria.

@@ -70,9 +70,9 @@ Possiamo modellare le componenti del ciclo come relazioni insiemistiche:
 
 * **Rappresentazione globale del ciclo ($W$)**:  
 
-  $$W = (G; C)^* ; \tilde{G} : \mathbb{Z} \to \mathbb{Z}$$  
+  $$W = (G; C)^\ast ; \tilde{G} : \mathbb{Z} \to \mathbb{Z}$$  
 
-  > Dove $(G; C)^*$ rappresenta la chiusura riflessiva-transitiva del corpo.
+  > Dove $(G; C)^\ast$ rappresenta la chiusura riflessiva-transitiva del corpo.
 
 
 ### Intuizione

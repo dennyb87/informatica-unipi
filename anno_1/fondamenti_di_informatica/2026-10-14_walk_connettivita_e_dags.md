@@ -104,8 +104,8 @@ L'insieme delle componenti fortemente connesse forma una **partizione** dell'ins
 
 ### Altre proprieta'
 
-* $G(V, E)$ e' fortemente connesso $\iff V \times V \subseteq E^*$ (dove $E^*$ e' la chiusura riflessiva e transitiva).
-* $(x, y) \in E^* \cap (E^*)^{op} \iff x$ e $y$ appartengono alla stessa SCC.
+* $G(V, E)$ e' fortemente connesso $\iff V \times V \subseteq E^\ast$ (dove $E^\ast$ e' la chiusura riflessiva e transitiva).
+* $(x, y) \in E^\ast \cap (E^\ast)^{op} \iff x$ e $y$ appartengono alla stessa SCC.
 * Due nodi $x, y$ con $x \ne y$ appartengono alla stessa SCC se e solo se esiste un walk chiuso che li attraversa entrambe.
 
 ---
@@ -127,7 +127,7 @@ graph TD
 ```
 
 ### Proprieta' fondamentale
-> Se $G = (V, E)$ e' un DAG, allora la chiusura riflessiva e transitiva $E^*$ definisce un **ordinamento parziale** sui nodi.
+> Se $G = (V, E)$ e' un DAG, allora la chiusura riflessiva e transitiva $E^\ast$ definisce un **ordinamento parziale** sui nodi.
 
 ## Ordinamento Topologico
 Dato un DAG $G = (V, E)$, un ordinamento topologico e' una **biiezione** $\eta: V \to \{0, 1, 2, \dots, n-1\}$ tale che per ogni arco $(x, y) \in E$ vale:

@@ -68,9 +68,9 @@ $$[5, 3, 8, 7, 5, 12, 4]$$
 
 ### Mappatura della lunghezza delle etichette (lengthBT)
 
-La funzione $lengthBT$ trasforma un albero di stringhe $BT_{A^*}$ in un albero di interi $BT_{\mathbb{N}}$, sostituendo ogni etichetta con la propria lunghezza:  
+La funzione $lengthBT$ trasforma un albero di stringhe $BT_{A^\ast}$ in un albero di interi $BT_{\mathbb{N}}$, sostituendo ogni etichetta con la propria lunghezza:  
 
-$$lengthBT : BT_{A^*} \to BT_{\mathbb{N}}$$  
+$$lengthBT : BT_{A^\ast} \to BT_{\mathbb{N}}$$  
 
 $$
 \begin{aligned}

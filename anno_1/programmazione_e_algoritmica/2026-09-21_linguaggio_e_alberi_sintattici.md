@@ -12,7 +12,7 @@ dove:
 
 L'insieme delle produzioni e' invece:  
 
-$P \subseteq S^* \times S^*$  
+$P \subseteq S^\ast \times S^\ast$  
 
 Dove $S = T \cup N$  
 
@@ -37,7 +37,7 @@ $$\alpha \Rightarrow \alpha_1 \Rightarrow \alpha_2 \Rightarrow \dots \Rightarrow
 
 ## Derivativo immediato
 
-Date due stringhe $a, a^\prime \in S^*$ si dice che $a^\prime$ e' un derivativo immediato di $a$ se da $a$ e' possibile ottenere $a^\prime$ applicando una singola produzione.  
+Date due stringhe $a, a^\prime \in S^\ast$ si dice che $a^\prime$ e' un derivativo immediato di $a$ se da $a$ e' possibile ottenere $a^\prime$ applicando una singola produzione.  
 
 Si indica con $\alpha \Rightarrow \alpha'$ l'applicazione di una sola produzione.
 
@@ -51,15 +51,15 @@ a = Exp + Exp Op 2  ⇒  a' = Exp + Num Op2
 
 Dato $G = (T, N, P)$ e un simbolo non terminale $X \in N$, il linguaggio di $X$ scritto $\mathcal{L}(X)$ e' l'insieme di tutti e soli i derivativi:
 
-$$\mathcal{L}(X) = \{w \mid w \in T^* \text{ e } X \rightsquigarrow^* w\}$$
+$$\mathcal{L}(X) = \{w \mid w \in T^\ast \text{ e } X \rightsquigarrow^\ast w\}$$
 
 > $L(X)$ è l'insieme di tutte le stringhe $\omega$ formate da soli simboli terminali $T$ tali per cui è possibile derivare $\omega$ partendo dal simbolo $X$ in zero o più passaggi di derivazione $\rightsquigarrow$
 
 ## Quali stringhe appartengono al linguaggio ?  
 
-Data la grammatica $G$ e una stringa di terminali $\omega \in T^*$ appartiene al linguaggio $\mathcal{L}(X)$ del non terminale $X \in N^*$ se:  
+Data la grammatica $G$ e una stringa di terminali $\omega \in T^\ast$ appartiene al linguaggio $\mathcal{L}(X)$ del non terminale $X \in N^\ast$ se:  
 
-> partendo dal simbolo $X$ e applicando una o piu' regole di produzione, passo dopo passo si ottiene la stringa $\omega \in T^*$ composta solo da terminali.  
+> partendo dal simbolo $X$ e applicando una o piu' regole di produzione, passo dopo passo si ottiene la stringa $\omega \in T^\ast$ composta solo da terminali.  
 
 ### Esempio  
 

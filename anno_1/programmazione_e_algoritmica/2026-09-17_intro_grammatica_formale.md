@@ -39,28 +39,28 @@ $A^2 = \lbrace00, 01, 10, 11\rbrace$
 
 ## Stringhe sull'alfabeto  
 
-Definiamo $A^*$ come l'insieme di tutte le stringhe sull'alfabeto $A$. Formalmente...  
+Definiamo $A^\ast$ come l'insieme di tutte le stringhe sull'alfabeto $A$. Formalmente...  
 
-$A^* = \bigcup_{n \ge 0} A_n = \lbrace\epsilon\rbrace \cup A^1 \cup A^2 \cup...$  
+$A^\ast = \bigcup_{n \ge 0} A_n = \lbrace\epsilon\rbrace \cup A^1 \cup A^2 \cup...$  
 
-Se $A$ non e' vuoto allora $A^*$ e' infinito...  
+Se $A$ non e' vuoto allora $A^\ast$ e' infinito...  
 
-$A = \lbrace0, 1\rbrace \implies A^* = \lbrace\epsilon, 0, 1, 00, 01, ...\rbrace$  
+$A = \lbrace0, 1\rbrace \implies A^\ast = \lbrace\epsilon, 0, 1, 00, 01, ...\rbrace$  
 
 
 ## Linguaggio  
 
-Un linguaggio $L$ su un alfabeto $A$ e' un sottoinsieme di $A^*$, formalmente...  
+Un linguaggio $L$ su un alfabeto $A$ e' un sottoinsieme di $A^\ast$, formalmente...  
 
-$L \subseteq A^*$  
+$L \subseteq A^\ast$  
 
-Sono linguaggi particolari il linguaggio vuoto $\varnothing$ ed il linguaggio di tutte le possibili stringhe su $A$ ovvero $A^*$. Ad esempio se:  
+Sono linguaggi particolari il linguaggio vuoto $\varnothing$ ed il linguaggio di tutte le possibili stringhe su $A$ ovvero $A^\ast$. Ad esempio se:  
 
 $A = \lbrace 0, 1\rbrace$  
 
 Allora un linguaggio $L$ potrebbe essere...  
 
-$L \subseteq A^* = \lbrace S \in A^* \mid \text{la stringa S contiene un numero pari di 1}\rbrace = \lbrace\epsilon, \rbrace$  
+$L \subseteq A^\ast = \lbrace S \in A^\ast \mid \text{la stringa S contiene un numero pari di 1}\rbrace = \lbrace\epsilon, \rbrace$  
 
 ## Grammatica formale  
 
@@ -72,7 +72,7 @@ Una *grammatica formale* e' una tripla $G = (T, N, P)$, dove:
 
 - $T$ e' l'insieme dei simboli *terminali*: costituiscono l'alfabeto di riferimento;
 - $N$ e' l'insieme dei simboli *non terminali*, usati per rappresentare le categorie sintattiche che ci interessano;
-- indicando con $S = T \cup N$ l'insieme di tutti i simboli della grammatica, $P \subseteq S^* \times S^*$ e' l'insieme delle produzioni.
+- indicando con $S = T \cup N$ l'insieme di tutti i simboli della grammatica, $P \subseteq S^\ast \times S^\ast$ e' l'insieme delle produzioni.
 
 Ogni produzione ha forma $\alpha ::= \beta$, con $\alpha$ che contiene almeno un simbolo non terminale.
 
@@ -108,7 +108,7 @@ Ad esempio, una frase generata da questa grammatica e': *svolta a sinistra, poi 
 Consideriamo espressioni aritmetiche formate da numeri e dagli operatori binari $+$ e $\times$. L'alfabeto contiene quindi le cifre decimali e gli operatori:
 
 $$
-L \subseteq A^* = \lbrace0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \times, +\rbrace^*
+L \subseteq A^\ast = \lbrace0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \times, +\rbrace^\ast
 $$
 
 Non tutte le stringhe costruite con questi simboli sono espressioni valide: le stringhe ben formate costituiscono un linguaggio, che possiamo descrivere attraverso una grammatica.

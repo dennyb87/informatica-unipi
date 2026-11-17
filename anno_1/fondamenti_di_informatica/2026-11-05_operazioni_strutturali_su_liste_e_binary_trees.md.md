@@ -151,7 +151,7 @@ $$\begin{aligned}
 
 ## Altre funzioni su liste
 
-- Lunghezza di una lista $\text{lengthList}: L_A^* \to L_\mathbb{N}$
+- Lunghezza di una lista $\text{lengthList}: L_A^\ast \to L_\mathbb{N}$
   1. $\text{lengthList}([]) = []$
   2. $\text{lengthList}(w : lst) = |w| : \text{lengthList}(lst)$
   - Esempio di **mappatura (`map`):** `map: f l` applica la funzione $f$ agli elementi della lista preservandone la struttura.

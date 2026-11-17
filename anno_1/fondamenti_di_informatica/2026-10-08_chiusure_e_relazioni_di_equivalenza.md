@@ -50,15 +50,15 @@ Prendiamo la relazione successore sui numeri naturali:
 La chiusura transitiva $\text{Succ}^+$ rappresenta l'insieme di tutti i passi successivi possibili, che corrisponde esattamente alla relazione **minore** ($<$):
 $$\text{Succ}^+ = \{ (x, y) \mid \exists n \in \mathbb{N}^+, y = x + n \} \iff <$$
 
-### Chiusura Riflessiva e Transitiva (Stella di Kleene, $R^*$)
+### Chiusura Riflessiva e Transitiva (Stella di Kleene, $R^\ast$)
 La chiusura riflessiva e transitiva, nota come **Stella di Kleene**, comprende sia i cammini di lunghezza $\ge 1$ che l'identità (cammini di lunghezza 0):
-$$R^* = \bigcup_{n \in \mathbb{N}} R^n = R^+ \cup \text{Id}_A \quad (\text{poiche' } \text{Id}_A = R^0)$$
+$$R^\ast = \bigcup_{n \in \mathbb{N}} R^n = R^+ \cup \text{Id}_A \quad (\text{poiche' } \text{Id}_A = R^0)$$
 
 ## Idempotenza delle chiusure
 
 L'idempotenza vale per tutte le chiusure, ad esempio:  
 
-$(R^*)^* = R^*$  
+$(R^\ast)^\ast = R^\ast$  
 
 In altre parole...  
 

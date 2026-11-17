@@ -67,10 +67,10 @@ Consideriamo la famiglia di insiemi delle sequenze di ogni lunghezza possibile $
 
 L'operatore $A^\ast$ definisce l'unione infinita di tutte le $n$-uple:  
 
-$$A^* = \bigcup_{i \in \mathbb{N}} A^i = A^0 \cup A^1 \cup A^2 \cup \dots$$
+$$A^\ast = \bigcup_{i \in \mathbb{N}} A^i = A^0 \cup A^1 \cup A^2 \cup \dots$$
 
-* **Applicazione pratica:** Se $AN$ e' l'insieme dei caratteri alfanumerici, allora $AN^*$ rappresenta **l'insieme di tutte le possibili stringhe** composte da caratteri alfanumerici.
-* **Esempio particolare:** Se $1 = \{0\}$, allora $1^* = \{ (), (0), (0,0), (0,0,0), \dots \}$.
+* **Applicazione pratica:** Se $AN$ e' l'insieme dei caratteri alfanumerici, allora $AN^\ast$ rappresenta **l'insieme di tutte le possibili stringhe** composte da caratteri alfanumerici.
+* **Esempio particolare:** Se $1 = \{0\}$, allora $1^\ast = \{ (), (0), (0,0), (0,0,0), \dots \}$.
 
 ---
 
