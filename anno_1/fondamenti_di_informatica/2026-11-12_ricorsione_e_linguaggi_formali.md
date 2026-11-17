@@ -209,14 +209,14 @@ $$
 L \subseteq A^*
 $$
 
-Di conseguenza, l'insieme di tutti i possibili linguaggi definibili sull'alfabeto $A$ coincide con l'insieme delle parti di $A^*$, indicato con $\mathcal{P}(A^*)$.
+Di conseguenza, l'insieme di tutti i possibili linguaggi definibili sull'alfabeto $A$ coincide con l'insieme delle parti di $A^\star$, indicato con $\mathcal{P}(A^\star)$.
 
 * **Il vocabolario italiano:** e' un linguaggio (finito) definito sull'alfabeto latino.
 * **La lingua italiana (insieme delle frasi corrette):** e' un linguaggio (infinito) definito su un alfabeto che comprende lettere latine maiuscole e minuscole, lo spazio e i segni di punteggiatura.
 * **Le espressioni aritmetiche ben formate:** sono un linguaggio definito sull'alfabeto $\{0, 1, \dots, 9, +, -, \div, \times, (, )\}$.
 * **Un linguaggio di programmazione (es. C, Java, Python):** e' un linguaggio formale definito sull'alfabeto ASCII o UNICODE.
 
-> **In parole povere:** $A^*$ e' il dizionario completo di tutte le combinazioni di caratteri, $L$ e' un singolo linguaggio (un elenco specifico di parole valide), e $\mathcal{P}(A^*)$ e' la libreria che contiene tutti gli elenchi possibili.
+> **In parole povere:** $A^\star$ e' il dizionario completo di tutte le combinazioni di caratteri, $L$ e' un singolo linguaggio (un elenco specifico di parole valide), e $\mathcal{P}(A^\star)$ e' la libreria che contiene tutti gli elenchi possibili.
 
 Ad esempio, sia un alfabeto...  
 
