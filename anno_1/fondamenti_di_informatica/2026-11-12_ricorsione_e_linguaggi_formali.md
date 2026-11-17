@@ -172,15 +172,15 @@ Un **alfabeto** $A$ e' un **insieme finito** non vuoto di elementi chiamati **si
 
 ## Stringhe (o parole) su un alfabeto
 
-Una **stringa** (detta anche *parola* nel contesto dei linguaggi naturali) su un alfabeto $A$ e' una sequenza finita, di lunghezza arbitraria, di simboli appartenenti ad $A$. L'insieme di tutte le possibili stringhe costruibili sull'alfabeto $A$ si indica con $A^\star$ (chiusura di Kleene).
+Una **stringa** (detta anche *parola* nel contesto dei linguaggi naturali) su un alfabeto $A$ e' una sequenza finita, di lunghezza arbitraria, di simboli appartenenti ad $A$. L'insieme di tutte le possibili stringhe costruibili sull'alfabeto $A$ si indica con $A^\ast$ (chiusura di Kleene).
 
-### Definizione induttiva di $A^\star$
+### Definizione induttiva di $A^\ast$
 
-L'insieme $A^\star$ puo' essere definito per induzione strutturale nel seguente modo:
-* **Clausola base:** $\epsilon \in A^\star$ (dove $\epsilon$ indica la *stringa vuota*, di lunghezza 0).
-* **Clausola induttiva:** se $w \in A^\star$ e $a \in A$, allora $aw \in A^\star$ (concatenando un simbolo a sinistra di una stringa si ottiene ancora una stringa).
+L'insieme $A^\ast$ puo' essere definito per induzione strutturale nel seguente modo:
+* **Clausola base:** $\epsilon \in A^\ast$ (dove $\epsilon$ indica la *stringa vuota*, di lunghezza 0).
+* **Clausola induttiva:** se $w \in A^\ast$ e $a \in A$, allora $aw \in A^\ast$ (concatenando un simbolo a sinistra di una stringa si ottiene ancora una stringa).
 
-### Esempi di stringhe in $A^\star$
+### Esempi di stringhe in $A^\ast$
 
 * **Su alfabeto latino minuscolo:** `bob`, `anna`, `hrjk`, $\epsilon$, `iiiiiii`
 * **Su cifre decimali:** `1981`, `27`, `10`, `500`, `0010`
@@ -189,14 +189,14 @@ L'insieme $A^\star$ puo' essere definito per induzione strutturale nel seguente 
 
 ### Analogia tra stringhe su $A$ e liste su $A$
 
-Confrontiamo la definizione induttiva di $A^\star$ con quella delle liste $L_A$ formate da elementi di un insieme $A$:
+Confrontiamo la definizione induttiva di $A^\ast$ con quella delle liste $L_A$ formate da elementi di un insieme $A$:
 
-| Concetto | Stringhe ($A^\star$) | Liste ($L_A$) |
+| Concetto | Stringhe ($A^\ast$) | Liste ($L_A$) |
 | :--- | :--- | :--- |
-| **Caso base** | $\epsilon \in A^\star$ | $[] \in L_A$ |
-| **Passo induttivo** | $(a \in A \land w \in A^\star) \implies aw \in A^\star$ | $(a \in A \land lst \in L_A) \implies a : lst \in L_A$ |
+| **Caso base** | $\epsilon \in A^\ast$ | $[] \in L_A$ |
+| **Passo induttivo** | $(a \in A \land w \in A^\ast) \implies aw \in A^\ast$ | $(a \in A \land lst \in L_A) \implies a : lst \in L_A$ |
 
-* **Isomorfismo:** si puo' dimostrare formalmente che $L_A \cong A^\star$, ovvero l'insieme delle liste su $A$ e l'insieme delle stringhe su $A$ sono in **biiezione** (hanno la stessa identica struttura).
+* **Isomorfismo:** si puo' dimostrare formalmente che $L_A \cong A^\ast$, ovvero l'insieme delle liste su $A$ e l'insieme delle stringhe su $A$ sono in **biiezione** (hanno la stessa identica struttura).
 * **Differenza d'uso:** nel caso delle stringhe, $A$ e' per definizione un alfabeto (un insieme finito di simboli elementari). Nel caso delle liste, invece, l'insieme $A$ puo' essere arbitrario e persino infinito (liste di numeri, tuple, altre liste, programmi, ecc.).
 
 ---
@@ -206,17 +206,17 @@ Confrontiamo la definizione induttiva di $A^\star$ con quella delle liste $L_A$ 
 Dato un alfabeto $A$, un **linguaggio** $L$ su $A$ e' un qualsiasi sottoinsieme di stringhe costruite su $A$:
 
 $$
-L \subseteq A^\star
+L \subseteq A^\ast
 $$
 
-Di conseguenza, l'insieme di tutti i possibili linguaggi definibili sull'alfabeto $A$ coincide con l'insieme delle parti di $A^\star$, indicato con $\mathcal{P}(A^\star)$.
+Di conseguenza, l'insieme di tutti i possibili linguaggi definibili sull'alfabeto $A$ coincide con l'insieme delle parti di $A^\ast$, indicato con $\mathcal{P}(A^\ast)$.
 
 * **Il vocabolario italiano:** e' un linguaggio (finito) definito sull'alfabeto latino.
 * **La lingua italiana (insieme delle frasi corrette):** e' un linguaggio (infinito) definito su un alfabeto che comprende lettere latine maiuscole e minuscole, lo spazio e i segni di punteggiatura.
 * **Le espressioni aritmetiche ben formate:** sono un linguaggio definito sull'alfabeto $\{0, 1, \dots, 9, +, -, \div, \times, (, )\}$.
 * **Un linguaggio di programmazione (es. C, Java, Python):** e' un linguaggio formale definito sull'alfabeto ASCII o UNICODE.
 
-> **In parole povere:** $A^\star$ e' il dizionario completo di tutte le combinazioni di caratteri, $L$ e' un singolo linguaggio (un elenco specifico di parole valide), e $\mathcal{P}(A^\star)$ e' la libreria che contiene tutti gli elenchi possibili.
+> **In parole povere:** $A^\ast$ e' il dizionario completo di tutte le combinazioni di caratteri, $L$ e' un singolo linguaggio (un elenco specifico di parole valide), e $\mathcal{P}(A^\ast)$ e' la libreria che contiene tutti gli elenchi possibili.
 
 Ad esempio, sia un alfabeto...  
 
@@ -224,9 +224,9 @@ $A = \{a\}$
 
 ...allora la sua chiusura di Kleene e':
 
-$A^\star = \{\epsilon, a, aa, aaa, aaaa, \dots\}$  
+$A^\ast = \{\epsilon, a, aa, aaa, aaaa, \dots\}$  
 
-ovvero l'insieme infinito di tutte le sequenze che puoi formare usando solo la lettera $a$ inclusa la stringa vuota $\epsilon$. Un linguaggio $L \subseteq A^\star$ e' un sottoinsieme delle stringhe di $A^\star$, filtrato secondo una qualche regola. Esempi di linguaggi su $A$:  
+ovvero l'insieme infinito di tutte le sequenze che puoi formare usando solo la lettera $a$ inclusa la stringa vuota $\epsilon$. Un linguaggio $L \subseteq A^\ast$ e' un sottoinsieme delle stringhe di $A^\ast$, filtrato secondo una qualche regola. Esempi di linguaggi su $A$:  
 
 $L_1 = \{a, aaa, aaaaa, \dots\}$ $\rightarrow$ Il linguaggio delle stringhe di lunghezza dispari.  
 $L_2 = \{\epsilon, aa\}$ $\rightarrow$ Un linguaggio finito che accetta solo la stringa vuota e la stringa `aa`.  

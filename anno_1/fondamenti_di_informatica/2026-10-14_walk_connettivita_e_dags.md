@@ -38,7 +38,7 @@ In generale le seguenti sono equivalenti:
 1. esiste un walk da $x$ a $y$
 2. esiste un trail da $x$ a $y$
 3. esiste un path da $x$ a $y$
-4. $(x, y) \in E^\star$
+4. $(x, y) \in E^\ast$
 
 ---
 
@@ -53,7 +53,7 @@ In generale le seguenti sono equivalenti:
 1. esiste un walk chiuso da $x$ a $x$
 2. esiste un circuito $x$ a $x$
 3. esiste un ciclo da $x$ a $x$
-4. $(x, x) \in E^\star$
+4. $(x, x) \in E^\ast$
 
 ### Esempio pratico:
 * **Walk chiuso da $x$ a $x$:** $5 \to 3 \to 2 \to 1 \to 3 \to 2 \to 1 \to 3 \to 5$
