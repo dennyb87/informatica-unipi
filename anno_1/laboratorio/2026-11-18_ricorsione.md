@@ -179,12 +179,18 @@ function fibonacciNsimo(n: number): number {
 
 Dati due numeri naturali $a$ e $b$, e' possibile implementare le operazioni aritmetiche fondamentali mediante la ricorsione:
 
-- **Somma**: calcolata utilizzando esclusivamente le operazioni primitive di incremento ($+1$) e decremento ($-1$).
-  $$a + b = \begin{cases} a & \text{se } b = 0 \\ (a + 1) + (b - 1) & \text{se } b > 0 \end{cases}$$
-- **Prodotto**: espresso come somme successive.
-  $$a \cdot b = \begin{cases} 0 & \text{se } b = 0 \\ a + (a \cdot (b - 1)) & \text{se } b > 0 \end{cases}$$
-- **Esponentiazione**: espressa come prodotti successivi (con la convenzione $0^0 = 1$).
-  $$a^b = \begin{cases} 1 & \text{se } b = 0 \\ a \cdot a^{b-1} & \text{se } b > 0 \end{cases}$$
+- **Somma**: calcolata utilizzando esclusivamente le operazioni primitive di incremento ($+1$) e decremento ($-1$).  
+```math
+a + b = \begin{cases} a & \text{se } b = 0 \\ (a + 1) + (b - 1) & \text{se } b > 0 \end{cases}
+``` 
+- **Prodotto**: espresso come somme successive.  
+```math
+a \cdot b = \begin{cases} 0 & \text{se } b = 0 \\ a + (a \cdot (b - 1)) & \text{se } b > 0 \end{cases}
+```  
+- **Esponentiazione**: espressa come prodotti successivi (con la convenzione $0^0 = 1$).  
+```math
+a^b = \begin{cases} 1 & \text{se } b = 0 \\ a \cdot a^{b-1} & \text{se } b > 0 \end{cases}
+```
 
 Va da se che ogni implementazione segue dalle definizioni induttive, ad esempio:  
 

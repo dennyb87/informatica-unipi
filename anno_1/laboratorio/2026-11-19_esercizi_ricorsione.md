@@ -75,8 +75,10 @@ function palindroma(s: string): boolean {
 
 ## Grammatica e bilanciamento parentesi
 
-Data una grammatica con la seguente regola di produzione:
-$$S \rightarrow (S) \mid SS \mid \varepsilon$$
+Data una grammatica con la seguente regola di produzione:  
+
+$$S \rightarrow (S) \mid SS \mid \varepsilon$$  
+
 dove $\varepsilon$ rappresenta la stringa vuota, si vuole scrivere una funzione ricorsiva per verificare se una stringa appartiene al linguaggio generato.
 
 ### Regole di validita'
@@ -130,16 +132,19 @@ Il Teorema di Bolzano (o teorema degli zeri) stabilisce le condizioni per l'esis
 
 ### Enunciato
 
-Sia $f : [a, b] \rightarrow \mathbb{R}$ una funzione continua nell'intervallo $[a, b]$. Supponiamo che $f(a)$ e $f(b)$ abbiano segno opposto, ossia:
-$$f(a) < 0 < f(b) \quad \text{oppure} \quad f(b) < 0 < f(a)$$
+Sia $f : [a, b] \rightarrow \mathbb{R}$ una funzione continua nell'intervallo $[a, b]$. Supponiamo che $f(a)$ e $f(b)$ abbiano segno opposto, ossia:  
 
-Allora esiste almeno un punto $x_0 \in (a, b)$ tale che:
-$$f(x_0) = 0$$
+$$f(a) < 0 < f(b) \quad \text{oppure} \quad f(b) < 0 < f(a)$$  
+
+Allora esiste almeno un punto $x_0 \in (a, b)$ tale che:  
+
+$$f(x_0) = 0$$  
 
 ## Ricerca ricorsiva degli zeri
 
 Si vuole quindi dividere l'intervallo trovando il punto medio con:  
-   $$m = \frac{a + b}{2}$$  
+
+$$m = \frac{a + b}{2}$$  
 
 Se la lunghezza dell'intervallo $(b - a)$ e' inferiore alla tolleranza minima di $10^{-6}$, la ricerca termina e viene restituito $m$. Altrimenti, si valuta il segno del prodotto $f(a) \cdot f(m)$:
    * Se sono discordi allora $f(a) \cdot f(m) \le 0$ e per il teorema lo zero si trova prioprio nell'intervallo $[a, m]$
