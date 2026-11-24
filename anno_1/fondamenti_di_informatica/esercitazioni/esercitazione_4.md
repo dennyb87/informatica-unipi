@@ -3,7 +3,6 @@
 Sia $A$ un insieme e $L_A$ l'insieme delle liste di elementi di $A$, e siano $app$, $len$ e $rev$ le funzioni su liste definite sulla dispensa. Dimostrare per induzione strutturale le seguenti uguaglianze:
 
 1. Per ogni $lst_1, lst_2 \in L_A$, $len(app(lst_1, lst_2)) = len(lst_1) + len(lst_2)$.  
-2. Per ogni $lst \in L_A$, $len(rev(lst)) = len(lst)$.
 
 ### Svolgimento 1
 
@@ -68,6 +67,6 @@ Ho utilizzato di proposito i nomi `minBT/maxBT` per poterli differenziare dalle 
 
 ### Svolgimento 2
 
-**Clausola base:** $minBT(\lambda) = 0$  
+**Clausola base:** $minBT(\lambda) = \infty$  
 
 **Clausola induttiva:** $minBT(N(t_1, n, t_2)) = min(n, min(minBT(t_1), minBT(t_2)))$  
