@@ -128,34 +128,34 @@ Ogni formula ben formata puo' essere rappresentata come un albero di derivazione
 
 ```mermaid
 graph TD
-    P1["&lt;Prop&gt;"] --> P2["&lt;Prop&gt;"]
-    P1 --> OP1["&lt;OpB&gt;"]
-    P1 --> P3["&lt;Prop&gt;"]
+    P1["Prop"] --> P2["Prop"]
+    P1 --> OP1["OpB"]
+    P1 --> P3["Prop"]
     
-    P2 --> AT1["&lt;Atom&gt;"]
-    AT1 --> X1["&lt;X&gt;"]
+    P2 --> AT1["Atom"]
+    AT1 --> X1["X"]
     X1 --> A["A"]
     
     OP1 --> AND["∧"]
     
-    P3 --> AT2["&lt;Atom&gt;"]
+    P3 --> AT2["Atom"]
     AT2 --> LPAR["("]
-    AT2 --> P4["&lt;Prop&gt;"]
+    AT2 --> P4["Prop"]
     AT2 --> RPAR[")"]
     
-    P4 --> P5["&lt;Prop&gt;"]
-    P4 --> OP2["&lt;OpB&gt;"]
-    P4 --> P6["&lt;Prop&gt;"]
+    P4 --> P5["Prop"]
+    P4 --> OP2["OpB"]
+    P4 --> P6["Prop"]
     
-    P5 --> AT3["&lt;Atom&gt;"]
-    AT3 --> X2["&lt;X&gt;"]
+    P5 --> AT3["Atom"]
+    AT3 --> X2["X"]
     X2 --> B["B"]
     
     OP2 --> OR["∨"]
     
     P6 --> NOT["¬"]
-    P6 --> AT4["&lt;Atom&gt;"]
-    AT4 --> X3["&lt;X&gt;"]
+    P6 --> AT4["Atom"]
+    AT4 --> X3["X"]
     X3 --> C["C"]
 ```
 
