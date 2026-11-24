@@ -209,14 +209,15 @@ $$\mathcal{I} : X \to \{f, t\}$$
 che ad ogni simbolo proposizionale in $X$ associa un valore di verita'.
 
 La **semantica** e' definita induttivamente mediante la funzione di valutazione:  
-$$[[ \_ ]]_{\mathcal{I}} : Prop \to \{f, t\}$$  
+$$[[ \dots ]]_{\mathcal{I}} : Prop \to \{f, t\}$$  
 
-Le regole di definizione induttiva sono le seguenti:
-1. $[[ T ]]_{\mathcal{I}} = t \quad \text{e} \quad [[ F ]]_{\mathcal{I}} = f$
-2. $[[ A ]]_{\mathcal{I}} = \mathcal{I}(A) \quad \text{per ogni simbolo atomico } A \in X$
-3. $[[ (P) ]]_{\mathcal{I}} = ([[ P ]]_{\mathcal{I}}) \quad \text{per ogni formula } P \in Prop$
-4. $[[ \neg Q ]]_{\mathcal{I}} = \neg [[ Q ]]_{\mathcal{I}} \quad \text{per ogni formula atomica } Q$
-5. $[[ P \text{ op } Q ]]_{\mathcal{I}} = [[ P ]]_{\mathcal{I}} \text{ op } [[ Q ]]_{\mathcal{I}} \quad \text{per ogni connettivo } \text{op} \in \{\land, \lor, \Rightarrow, \Leftarrow, \Leftrightarrow\}$
+Le regole di definizione induttiva sono le seguenti:  
+
+1. $[[ T ]]_{\mathcal{I}} = t \quad \text{e} \quad [[ F ]]_{\mathcal{I}} = f$  
+2. $[[ A ]]_{\mathcal{I}} = \mathcal{I}(A) \quad \text{per ogni simbolo atomico } A \in X$  
+3. $[[ (P) ]]_{\mathcal{I}} = ([[ P ]]_{\mathcal{I}}) \quad \text{per ogni formula } P \in Prop$  
+4. $[[ \neg Q ]]_{\mathcal{I}} = \neg [[ Q ]]_{\mathcal{I}} \quad \text{per ogni formula atomica } Q$  
+5. $[[ P \text{ op } Q ]]_{\mathcal{I}} = [[ P ]]_{\mathcal{I}} \text{ op } [[ Q ]]_{\mathcal{I}} \quad \text{per ogni connettivo } \text{op} \in \{\land, \lor, \Rightarrow, \Leftarrow, \Leftrightarrow\}$  
 
 ## Distinzione fondamentale tra sintassi e semantica
 
