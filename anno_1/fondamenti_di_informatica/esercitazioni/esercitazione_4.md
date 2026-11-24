@@ -6,32 +6,44 @@ Sia $A$ un insieme e $L_A$ l'insieme delle liste di elementi di $A$, e siano $ap
 
 ### Svolgimento 1
 
-#### Caso Base: $lst_1 = \lbrack\ \rbrack$  
-Dobbiamo dimostrare che $len(app(\lbrack\ \rbrack, lst_2)) = len(\lbrack\ \rbrack) + len(lst_2)$.
+#### Caso Base: $lst_1 = []$  
+Dobbiamo dimostrare che $len(app([], lst_2)) = len([]) + len(lst_2)$.
 
 * **Primo membro:**  
-  $$len(app(\lbrack\ \rbrack, lst_2)) = len(lst_2) \quad \{def.\ app\}$$  
+
+```math
+len(app([], lst_2)) = len(lst_2) \quad \{\text{def.\ app}\} 
+```
+
 * **Secondo membro:**  
-  $$len(\lbrack\ \rbrack) + len(lst_2) = 0 + len(lst_2) = len(lst_2) \quad \{def.\ len\}$$    
+
+```math
+len([]) + len(lst_2) = 0 + len(lst_2) = len(lst_2) \quad \{\text{def.\ len}\}
+```
 
 I due membri coincidono, quindi il caso base e' verificato.
 
 #### Passo Induttivo: $lst_1 = a:lst$
 * **Ipotesi induttiva:** Se l'uguaglianza vale per la $lst \in L_A$, ovvero:  
 
-  $$len(app(lst, lst_2)) = len(lst) + len(lst_2)$$  
+```math
+len(app(lst, lst_2)) = len(lst) + len(lst_2)
+```
 
 * Dobbiamo dimostrare che vale anche per $a:lst$ (con $a \in A$):  
-  $$len(app(a:lst, lst_2)) = len(a:lst) + len(lst_2)$$  
+
+```math
+len(app(a:lst, lst_2)) = len(a:lst) + len(lst_2)
+```
 
 **Svolgimento passo induttivo**  
 
 $$
 \begin{aligned}
-len(app(a:lst, lst_2)) &= len(a:app(lst, lst_2)) && \{def.\ app \}\\
-&= 1 + len(app(lst, lst_2)) && \{def.\ len \}\\
-&= 1 + len(lst) + len(lst_2) && \{ipotesi \ induttiva\}\\
-&= len(a:lst) + len(lst_2) && \{def.\ len\}\\
+len(app(a:lst, lst_2)) &= len(a:app(lst, lst_2)) && \{\text{def.\ app}\}\\
+&= 1 + len(app(lst, lst_2)) && \{\text{def.\ len}\}\\
+&= 1 + len(lst) + len(lst_2) && \{\text{ipotesi \ induttiva}\}\\
+&= len(a:lst) + len(lst_2) && \{\text{def.\ len}\}\\
 \end{aligned}
 $$
 
