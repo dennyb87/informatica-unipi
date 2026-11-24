@@ -209,22 +209,22 @@ $$\mathcal{I} : X \to \{f, t\}$$
 che ad ogni simbolo proposizionale in $X$ associa un valore di verita'.
 
 La **semantica** e' definita induttivamente mediante la funzione di valutazione:  
-$$[\![ \_ ]\!]_{\mathcal{I}} : Prop \to \{f, t\}$$  
+$$[[ \_ ]]_{\mathcal{I}} : Prop \to \{f, t\}$$  
 
 Le regole di definizione induttiva sono le seguenti:
-1. $[\![ T ]\!]_{\mathcal{I}} = t \quad \text{e} \quad [\![ F ]\!]_{\mathcal{I}} = f$
-2. $[\![ A ]\!]_{\mathcal{I}} = \mathcal{I}(A) \quad \text{per ogni simbolo atomico } A \in X$
-3. $[\![ (P) ]\!]_{\mathcal{I}} = ([\![ P ]\!]_{\mathcal{I}}) \quad \text{per ogni formula } P \in Prop$
-4. $[\![ \neg Q ]\!]_{\mathcal{I}} = \neg [\![ Q ]\!]_{\mathcal{I}} \quad \text{per ogni formula atomica } Q$
-5. $[\![ P \text{ op } Q ]\!]_{\mathcal{I}} = [\![ P ]\!]_{\mathcal{I}} \text{ op } [\![ Q ]\!]_{\mathcal{I}} \quad \text{per ogni connettivo } \text{op} \in \{\land, \lor, \Rightarrow, \Leftarrow, \Leftrightarrow\}$
+1. $[[ T ]]_{\mathcal{I}} = t \quad \text{e} \quad [[ F ]]_{\mathcal{I}} = f$
+2. $[[ A ]]_{\mathcal{I}} = \mathcal{I}(A) \quad \text{per ogni simbolo atomico } A \in X$
+3. $[[ (P) ]]_{\mathcal{I}} = ([[ P ]]_{\mathcal{I}}) \quad \text{per ogni formula } P \in Prop$
+4. $[[ \neg Q ]]_{\mathcal{I}} = \neg [[ Q ]]_{\mathcal{I}} \quad \text{per ogni formula atomica } Q$
+5. $[[ P \text{ op } Q ]]_{\mathcal{I}} = [[ P ]]_{\mathcal{I}} \text{ op } [[ Q ]]_{\mathcal{I}} \quad \text{per ogni connettivo } \text{op} \in \{\land, \lor, \Rightarrow, \Leftarrow, \Leftrightarrow\}$
 
 ## Distinzione fondamentale tra sintassi e semantica
 
 Un aspetto concettuale fondamentale e' la netta separazione tra il livello sintattico e il livello semantico:  
 
-$$[\![ A \land B ]\!]_{\mathcal{I}} = [\![ A ]\!]_{\mathcal{I}} \land [\![ B ]\!]_{\mathcal{I}}$$  
+$$[[ A \land B ]]_{\mathcal{I}} = [[ A ]]_{\mathcal{I}} \land [[ B ]]_{\mathcal{I}}$$  
 
-* Il simbolo $\land$ presente all'interno delle parentesi semantiche $[\![ A \land B ]\!]_{\mathcal{I}}$ e' l'**AND sintattico** (un simbolo formale del linguaggio).
+* Il simbolo $\land$ presente all'interno delle parentesi semantiche $[[ A \land B ]]_{\mathcal{I}}$ e' l'**AND sintattico** (un simbolo formale del linguaggio).
 * Il simbolo $\land$ a destra dell'uguale e' l'**AND semantico**, ovvero la vera e propria funzione booleana:  
   $$\land : \text{Bool} \times \text{Bool} \to \text{Bool}$$  
 
@@ -250,9 +250,9 @@ Valutiamo la formula $(A \land B) \lor \neg C$ sotto l'interpretazione...
 $$\mathcal{I} = \{A \mapsto t, B \mapsto f, C \mapsto f, \dots\}$$  
 
 * Applicando la regola 5 della semantica per la disgiunzione ($\lor$):  
-   $$[\![ (A \land B) \lor \neg C ]\!]_{\mathcal{I}} = [\![ A \land B ]\!]_{\mathcal{I}} \lor [\![ \neg C ]\!]_{\mathcal{I}}$$  
+   $$[[ (A \land B) \lor \neg C ]]_{\mathcal{I}} = [[ A \land B ]]_{\mathcal{I}} \lor [[ \neg C ]]_{\mathcal{I}}$$  
 * Applicando le regole 3 e 4 per sotto-formule e negazione:  
-   $$= ([\![ A ]\!]_{\mathcal{I}} \land [\![ B ]\!]_{\mathcal{I}}) \lor \neg [\![ C ]\!]_{\mathcal{I}}$$  
+   $$= ([[ A ]]_{\mathcal{I}} \land [[ B ]]_{\mathcal{I}}) \lor \neg [[ C ]]_{\mathcal{I}}$$  
 * Sostituendo i valori forniti dall'interpretazione $\mathcal{I}$:  
    $$= (\mathcal{I}(A) \land \mathcal{I}(B)) \lor \neg \mathcal{I}(C)$$  
    $$= (t \land f) \lor \neg f$$  
