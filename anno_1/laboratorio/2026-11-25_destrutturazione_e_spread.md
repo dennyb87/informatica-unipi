@@ -72,7 +72,8 @@ let A = [3, 4, 5];
 let B = [1, 2, ...A, 6]; // [1, 2, 3, 4, 5, 6]
 let C = [...A, ...B];    // Concatenazione di A e B
 
-let [testa, ...resto] = A; // testa = 3, resto = [4, 5]
+let [testa, ...resto] = A; // testa = 3, resto = [4, 5] (rest)
+let D = [testa, ...resto]; // [3, 4, 5] (spread)
 
 // Sugli oggetti (in caso di chiavi uguali, vince l'ultima specificata)
 let q = { a: 1, b: 2 };
