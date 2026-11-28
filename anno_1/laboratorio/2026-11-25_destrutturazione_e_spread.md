@@ -152,3 +152,43 @@ function max(a: number[]): number {
     return Math.max(t, max(r));
 }
 ```
+
+## Metodi di Array
+
+Alcuni metodi predefiniti consentono di scorrere un array come una lista in modo piu generale.
+
+sia $A$ un array di elementi di tipo $E$, $p: E \to \text{Bool}$ un predicato, $f: E \to X$ una funzione:
+
+| Metodo | Descrizione |
+| :--- | :--- |
+| `A.every(p)` | restituisce `true` se tutti gli elementi soddisfano $p$, `false` altrimenti |
+| `A.some(p)` | restituisce `true` se almeno un elemento soddisfa $p$, `false` altrimenti |
+| `A.find(p)` | restituisce un elemento $e$ tale che $p(e)$ e `true`, oppure `undefined` |
+| `A.findIndex(p)` | restituisce l'indice di un elemento $e$ tale che $p(e)$ e `true`, o `-1` |
+| `A.includes(e)` | restituisce `true` se $A$ contiene un elemento uguale a $e$, `false` altrimenti |
+| `A.forEach(f)` | invoca `f(e)` per ogni elemento $e$ dell'array $A$ |
+| `A.map(f)` | restituisce un nuovo array $A' = [f(e_1), f(e_2), \dots, f(e_n)]$ |
+| `A.filter(p)` | restituisce un nuovo array $A'$ con i soli elementi che soddisfano $p$ |
+| `A.reverse()` | modifica l'array invertendo l'indice degli elementi |
+
+## Funzioni di riduzione
+
+Sono a volte utili le funzioni di riduzione per accumulare i risultati scorrendo la lista un elemento alla volta.
+
+| Metodo | Descrizione |
+| :--- | :--- |
+| `A.reduce(f, z)` | riduzione da sinistra a destra partendo da $z$ applicando $f$ |
+| `A.reduceRight(f, z)` | riduzione da destra a sinistra partendo da $z$ applicando $f$ |
+
+### Esempio
+
+```typescript
+function f(z: number, e: number): number {
+  return z + e;
+}
+
+// restituisce la somma di tutti gli elementi di A
+A.reduce(f, 0);
+
+// equivalente a: f(...f(f(z, e_0), e_1)..., e_n)
+```
